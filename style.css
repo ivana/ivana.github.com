@@ -1,0 +1,29 @@
+@font-face { font-family:Mido; src:url("/fonts/Mido.otf") }
+@font-face { font-family:"PT Sans"; src:url("/fonts/PT_Sans_Italic.ttf"); font-style:italic }
+
+* {
+  vertical-align:baseline;
+  padding:0; margin:0;
+}
+header { display:block }
+body {
+  font:62.5% serif;
+  margin:0 auto; width:500px; padding:2em 0 0.1em 4em;
+  border-left:3px double;
+  background:snow;
+}
+body > * { font-size:1.2em }
+
+/* headings */
+h1 {
+  font-family:Mido, Courier, serif; font-size:5em;
+  line-height:1em;
+}
+h2 {}
+  hgroup h2 {
+    font:italic 1.3em "PT Sans", sans-serif;
+    position:relative; left:130px; top:10px;
+    text-shadow:1px 1px 1px rgba(120, 120, 120, 0.5);
+  }
+
+/* anchors */
