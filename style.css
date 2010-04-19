@@ -1,29 +1,62 @@
-@font-face { font-family:Mido; src:url("/fonts/Mido.otf") }
-@font-face { font-family:"PT Sans"; src:url("/fonts/PT_Sans_Italic.ttf"); font-style:italic }
+@font-face { font-family:Mido; src:url("fonts/Mido.otf") }
+@font-face { font-family:"PT Sans"; src:url("fonts/PT_Sans.ttf") }
+@font-face { font-family:"PT Sans"; src:url("fonts/PT_Sans_Italic.ttf"); font-style:italic }
+@font-face { font-family:"Theano Didot"; src:url("fonts/TheanoDidot-Regular.ttf") }
 
 * {
   vertical-align:baseline;
   padding:0; margin:0;
 }
-header { display:block }
 body {
-  font:62.5% serif;
-  margin:0 auto; width:500px; padding:2em 0 0.1em 4em;
-  border-left:3px double;
+  font-family:"Theano Didot", didot, "times new roman", times, georgia, serif;
+  margin:0 auto; width:500px; padding:1.5em 0 0 2.5em;
+  border-left:5px double; /*border-right:3px double;*/
   background:snow;
+  color:#3B3B3B;
 }
-body > * { font-size:1.2em }
+  body > * { font-size:110% }
+
+header, footer { display:block }
+header { margin-bottom:5em }
+footer { margin-top:5em }
+
+p {
+  font-size:1.1em; line-height:1.4em;
+  text-indent:-0.5em;
+  margin-bottom:1em;
+}
+  footer p { font-size:.8em; margin-bottom:0 }
+
+/* images */
+img { border:0 none }
+.social img {
+  border:1px solid #777;
+  box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+  -moz-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+  -webkit-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+  -o-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+}
+
+/* lists */
+ul, ol { list-style-position:inside }
+
+ol.social { list-style-type:none; margin-top:1.5em }
+  ol.social li { display:inline; padding-left:1em }
+  ol.social li:first-child { padding-left:0 }
 
 /* headings */
 h1 {
-  font-family:Mido, Courier, serif; font-size:5em;
+  font-family:Mido, Courier, serif; font-size:3.4em;
   line-height:1em;
+  color:black;
 }
-h2 {}
+h2, footer {
+  font-family:"PT Sans", "trebuchet ms", sans-serif; font-weight:normal;
+  text-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+}
   hgroup h2 {
-    font:italic 1.3em "PT Sans", sans-serif;
+    font-style:italic; font-size:.9em;
     position:relative; left:130px; top:10px;
-    text-shadow:1px 1px 1px rgba(120, 120, 120, 0.5);
   }
 
 /* anchors */
