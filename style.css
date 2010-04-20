@@ -52,7 +52,7 @@ ul, ol { list-style-position:inside }
 
 /* headings */
 body > header h1 {
-  font-family:Mido, Courier, serif; font-size:3.4em;
+  font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.4em;
   line-height:1em;
 }
 body > header h2, section > h1 {
