@@ -36,7 +36,7 @@ p { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2) }
 /* images */
 img { border:0 none }
 .vcard img {
-  border:1px solid #777;
+  border:3px double #777; width:40px;
   box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
   -moz-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
   -webkit-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
@@ -64,10 +64,10 @@ body > header h2 {
   position:relative; left:130px; top:10px;
 }
 section > h1 {
-  font-size:2em;
+  font-size:2em; line-height:.9em;
   text-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-  border-bottom:5px double;
-  margin-bottom:1em;
+  border:double #777; border-width:0 3px 3px 0;
+  margin-bottom:1em; padding-top:.1em;
 }
 
 /* anchors */
