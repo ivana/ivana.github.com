@@ -9,16 +9,14 @@
 }
 body {
   font-family:"Theano Didot", didot, "times new roman", times, georgia, serif;
-  margin:0 auto; width:500px; padding:1.5em 0 0 2.5em;
-  border-left:5px double; /*border-right:3px double;*/
+  margin:0 auto; width:500px; padding:0 0 1.5em 2.5em;
+  border-left:3px double;
   background:snow;
   color:#222;
 }
   body > * { font-size:110% }
 
-header, footer { display:block }
-header { margin-bottom:4.5em }
-footer { margin-top:4.5em }
+header { display:block; height:224px; padding-top:1.5em }
 
 p { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2) }
   section p {
@@ -26,9 +24,22 @@ p { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2) }
     text-indent:-0.3em;
     margin-bottom:1em;
   }
-  footer p { font-size:.85em }
 
 .fn { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.5) }
+
+/* nav */
+nav {
+  float:right;
+  font-size:.9em;
+  margin-top:-25px;
+}
+  nav li {
+    width:65px; height:65px;
+    border:3px double;
+    letter-spacing:0.03em;
+    line-height:2em;
+    text-align:center;
+  }
 
 /* images */
 img { border:0 none }
@@ -54,7 +65,7 @@ body > header h1 {
   font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.4em;
   line-height:1em;
 }
-body > header h2, section h1, section h2 {
+body > header h2, section h1, section h2, nav {
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
 }
 body > header h2 {
@@ -68,7 +79,6 @@ section h1, section h2 {
 section h1 {
   font-size:2em; line-height:.9em;
   margin-bottom:1em; padding:.1em 0;
-  border-bottom:3px double #555;
 }
 section h2 {
   font-size:1.5em; line-height:1em;
