@@ -72,6 +72,7 @@ body > header h2 {
   font-style:italic; font-size:.9em;
   text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2);
   position:relative; left:110px; top:5px;
+  width:50%;
 }
 section h1, section h2 {
   text-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
