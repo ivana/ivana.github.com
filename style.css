@@ -8,21 +8,21 @@
   padding:0; margin:0;
 }
 body {
-  font-family:"Theano Didot", didot, "times new roman", times, georgia, serif;
-  margin:0 auto; width:500px; padding:0 0 1.5em 2.5em;
+  font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
+  margin:0 auto; width:500px; padding:0 0 1.5em 4em;
   border-left:3px double;
-  background:snow;
-  color:#222;
+  background:snow; color:#222;
+  /*background-image:url('img/ivana-site-grid.png');*/
 }
-  body > * { font-size:110% }
+  body > * { font-size:1.8em }
 
-header { display:block; height:224px; padding-top:1.5em }
+header { display:block; padding-top:1.6em }
 
 p { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2) }
   section p {
-    font-size:1em; line-height:1.4em;
+    font-size:1em; line-height:1.5em;
     text-indent:-0.3em;
-    margin-bottom:1em;
+    margin-bottom:1.5em;
   }
 
 .fn { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.5) }
@@ -37,45 +37,26 @@ nav {
     line-height:2.35em; font-size:.85em; text-align:right;
   }
 
-/* images */
-img { border:0 none }
-.vcard ol img {
-  border:3px double #555; width:40px;
-
-  box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-  -moz-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-  -webkit-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-  -o-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-}
-
-/* lists */
-ul, ol { list-style-position:inside }
-ol { list-style-type:none }
-
-.vcard ol { margin:1.5em 0 1em }
-  .vcard ol li { display:inline; padding-left:1em }
-  .vcard ol li:first-child { padding-left:0 }
-
 /* headings */
 body > header h1 {
-  font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.4em;
-  line-height:1em;
+  font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.3em;
+  line-height:.9em;
 }
 body > header h2, section h1, section h2, nav {
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
 }
 body > header h2 {
-  font-style:italic; font-size:.9em;
+  font-style:italic; font-size:.85em;
   text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2);
-  position:relative; left:110px; top:5px;
+  position:relative; left:110px; top:8px;
   width:50%;
 }
 section h1, section h2 {
-  text-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+  text-shadow:1px 1px 1px rgba(120, 120, 120, 0.3);
 }
 section h1 {
   font-size:2em; line-height:.9em;
-  margin-bottom:1em; padding:.1em 0;
+  margin:-0.35em 0 1.3em; padding:.1em 0;
 }
 section h2 {
   font-size:1.5em; line-height:1em;
@@ -100,6 +81,25 @@ header a:focus, header a:active, header a:visited { outline:0 none }
 .vcard ol a:hover {
   position:relative; bottom:5px; left:1px;
 }
+
+/* images */
+img { border:0 none }
+.vcard ol img {
+  border:3px double #555; width:40px;
+
+  box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+  -moz-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+  -webkit-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+  -o-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+}
+
+/* lists */
+ul, ol { list-style-position:inside }
+ol { list-style-type:none }
+
+.vcard ol { margin:2em 0 1.5em }
+  .vcard ol li { display:inline; padding-left:1em }
+  .vcard ol li:first-child { padding-left:0 }
 
 /* #projects */
 #projects img { float:right; margin-top:.4em }
