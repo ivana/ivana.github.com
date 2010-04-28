@@ -28,21 +28,22 @@ p { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2) }
 img { border:0 none }
 
 /* nav */
-nav {
-  position:relative; bottom:3px; right:560px;
+nav, .vcard > a {
+  position:relative; right:560px;
+}
+nav { bottom:3px }
+nav li, .vcard > a {
+  letter-spacing:0.05em;
+  line-height:2.35em; font-size:.85em; text-align:right;
   text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2);
 }
-  nav li {
-    letter-spacing:0.05em;
-    line-height:2.35em; font-size:.85em; text-align:right;
-  }
 
 /* headings */
 body > header h1 {
   font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.3em;
   line-height:.9em;
 }
-body > header h2, section h1, section h2, nav {
+body > header h2, section h1, section h2, nav, .vcard > a {
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
 }
 body > header h2 {
@@ -83,6 +84,10 @@ ul, ol { list-style:inside none }
   ul li:before { content:'= ' }
 
 /* about */
+
+.vcard h1 { margin-bottom:.3em }
+
+.vcard > a { display:block; bottom:5px }
 
 .vcard ol { margin:2em 0 1.5em }
   .vcard ol li { display:inline; padding-left:1em }
