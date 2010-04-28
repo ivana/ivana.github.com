@@ -12,7 +12,7 @@ body {
   margin:0 auto; width:500px; padding:0 0 1.5em 4em;
   border-left:3px double;
   background:snow; color:#222;
-  /*background-image:url('img/ivana-site-grid.png');*/
+  background-image:url('img/ivana-site-grid.png');
 }
   body > * { font-size:1.8em }
 
@@ -25,7 +25,7 @@ p { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2) }
     margin-bottom:1.5em;
   }
 
-.fn { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.5) }
+img { border:0 none }
 
 /* nav */
 nav {
@@ -78,28 +78,32 @@ header a { text-decoration:none }
 header a:hover { text-shadow:none }
 header a:focus, header a:active, header a:visited { outline:0 none }
 
-.vcard ol a:hover {
-  position:relative; bottom:5px; left:1px;
-}
-
-/* images */
-img { border:0 none }
-.vcard ol img {
-  border:3px double #555; width:40px;
-
-  box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-  -moz-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-  -webkit-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-  -o-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-}
-
 /* lists */
-ul, ol { list-style-position:inside }
-ol { list-style-type:none }
+ul, ol { list-style:inside none }
+  ul li:before { content:'= ' }
+
+/* about */
 
 .vcard ol { margin:2em 0 1.5em }
   .vcard ol li { display:inline; padding-left:1em }
   .vcard ol li:first-child { padding-left:0 }
+  .vcard ol img {
+    border:3px double #555; width:40px;
+
+    box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+    -moz-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+    -webkit-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+    -o-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
+  }
+  .vcard ol a:hover {
+    position:relative; bottom:2px; left:1px;
+  }
+
+.vcard ul { line-height:1.5em; margin:-1em 0 1.5em }
+  .vcard ul a { text-decoration:none }
+  .vcard ul a:hover { text-decoration:underline }
+
+.fn { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.5) }
 
 /* #projects */
 #projects img { float:right; margin-top:.4em }
