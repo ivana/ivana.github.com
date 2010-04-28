@@ -1,7 +1,7 @@
-@font-face { font-family:Mido; src:url("fonts/Mido.otf") }
-@font-face { font-family:"Latin Modern Sans"; src:url("fonts/lmsans10-regular.otf") }
-@font-face { font-family:"Latin Modern Sans"; src:url("fonts/lmsans10-oblique.otf"); font-style:italic }
-@font-face { font-family:"Theano Didot"; src:url("fonts/TheanoDidot-Regular.ttf") }
+@font-face { font-family:Mido; src:url("/fonts/Mido.otf") }
+@font-face { font-family:"Latin Modern Sans"; src:url("/fonts/lmsans10-regular.otf") }
+@font-face { font-family:"Latin Modern Sans"; src:url("/fonts/lmsans10-oblique.otf"); font-style:italic }
+@font-face { font-family:"Theano Didot"; src:url("/fonts/TheanoDidot-Regular.ttf") }
 
 * {
   vertical-align:baseline;
@@ -12,7 +12,7 @@ body {
   margin:0 auto; width:500px; padding:0 0 1.5em 4em;
   border-left:3px double;
   background:snow; color:#222;
-  background-image:url('img/ivana-site-grid.png');
+  /*background-image:url('/img/ivana-site-grid.png');*/
 }
   body > * { font-size:1.8em }
 
@@ -37,6 +37,8 @@ nav li, .vcard > a {
   line-height:2.35em; font-size:.85em; text-align:right;
   text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2);
 }
+
+nav a, .vcard > a { text-decoration:none }
 
 /* headings */
 body > header h1 {
