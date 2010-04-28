@@ -38,6 +38,7 @@ nav li, .vcard > a {
 }
 
 nav a, .vcard > a { text-decoration:none }
+nav a:hover:before, .vcard > a:hover:before { content:'= ' }
 
 /* headings */
 body > header h1 {
