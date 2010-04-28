@@ -18,7 +18,7 @@ body {
 
 header { display:block; padding-top:1.6em }
 
-p { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2) }
+p { }
   section p {
     font-size:1em; line-height:1.5em;
     text-indent:-0.3em;
@@ -35,7 +35,6 @@ nav { bottom:3px }
 nav li, .vcard > a {
   letter-spacing:0.05em;
   line-height:2.35em; font-size:.85em; text-align:right;
-  text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2);
 }
 
 nav a, .vcard > a { text-decoration:none }
@@ -50,7 +49,6 @@ body > header h2, section h1, section h2, nav, .vcard > a {
 }
 body > header h2 {
   font-style:italic; font-size:.85em;
-  text-shadow:1px 1px 1px rgba(120, 120, 120, 0.2);
   position:relative; left:110px; top:8px;
   width:50%;
 }
@@ -73,12 +71,10 @@ a {
 }
 a:hover {
   text-decoration:none;
-  text-shadow:1px 1px 1px rgba(120, 120, 120, 0.5);
 }
 a.block { text-decoration:none }
 
 header a { text-decoration:none }
-header a:hover { text-shadow:none }
 header a:focus, header a:active, header a:visited { outline:0 none }
 
 /* lists */
@@ -86,7 +82,6 @@ ul, ol { list-style:inside none }
   ul li:before { content:'= ' }
 
 /* about */
-
 .vcard h1 { margin-bottom:.3em }
 
 .vcard > a { display:block; bottom:5px }
@@ -109,8 +104,6 @@ ul, ol { list-style:inside none }
 .vcard ul { line-height:1.5em; margin:-1em 0 1.5em }
   .vcard ul a { text-decoration:none }
   .vcard ul a:hover { text-decoration:underline }
-
-.fn { text-shadow:1px 1px 1px rgba(120, 120, 120, 0.5) }
 
 /* #projects */
 #projects img { float:right; margin-top:.4em }
