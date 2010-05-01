@@ -15,8 +15,9 @@ body {
   /*background-image:url('/img/ivana-site-grid.png');*/
 }
   body > * { font-size:1.8em }
+  body > header { padding-top:1.6em }
 
-header { display:block; padding-top:1.6em }
+header { display:block }
 
 p {
   font-size:1em; line-height:1.5em;
@@ -68,14 +69,19 @@ article h2, section h2 {
 /* anchors */
 a {
   color:inherit;
-}
-a:hover {
   text-decoration:none;
 }
-a.block { text-decoration:none }
 
-header a { text-decoration:none }
 header a:focus, header a:active, header a:visited { outline:0 none }
+
+p a, .vcard ul a {
+  color:#677D7C;
+  padding:0 .3em;
+}
+p a:hover, .vcard ul a:hover {
+  background:#F4F4F4;
+  border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;
+}
 
 /* lists */
 ul, ol { list-style:inside none }
@@ -102,8 +108,6 @@ ul, ol { list-style:inside none }
   }
 
 .vcard ul { line-height:1.5em; margin:-1em 0 1.5em }
-  .vcard ul a { text-decoration:none }
-  .vcard ul a:hover { text-decoration:underline }
 
 /* projects */
 #projects img { float:right; margin:.4em 0 0 1em }
