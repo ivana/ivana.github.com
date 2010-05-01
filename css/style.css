@@ -18,12 +18,11 @@ body {
 
 header { display:block; padding-top:1.6em }
 
-p { }
-  section p {
-    font-size:1em; line-height:1.5em;
-    text-indent:-0.3em;
-    margin-bottom:1.5em;
-  }
+p {
+  font-size:1em; line-height:1.5em;
+  text-indent:-0.3em;
+  margin-bottom:1.5em;
+}
 
 img { border:0 none }
 
@@ -45,7 +44,7 @@ body > header h1 {
   font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.3em;
   line-height:.9em;
 }
-body > header h2, section h1, section h2, nav, .vcard > a {
+body > header h2, article h1, article h2, section h1, section h2, nav, .vcard > a {
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
 }
 body > header h2 {
@@ -53,14 +52,14 @@ body > header h2 {
   position:relative; left:110px; top:8px;
   width:50%;
 }
-section h1, section h2 {
+article h1, article h2, section h1, section h2 {
   text-shadow:1px 1px 1px rgba(120, 120, 120, 0.3);
 }
-section h1 {
+article h1, section h1 {
   font-size:2em; line-height:.9em;
   margin:-0.35em 0 1.3em; padding:.1em 0;
 }
-section h2 {
+article h2, section h2 {
   font-size:1.5em; line-height:1em;
   margin:1.5em 0 1em;
 }
@@ -106,7 +105,10 @@ ul, ol { list-style:inside none }
   .vcard ul a { text-decoration:none }
   .vcard ul a:hover { text-decoration:underline }
 
-/* #projects */
+/* projects */
 #projects img { float:right; margin:.4em 0 0 1em }
 #projects p { text-align:justify }
 #projects a:active, a:visited { outline:0 none }
+
+/* article */
+article footer time { color:#91A2A7; font-style:italic }
