@@ -9,7 +9,8 @@
     <!--<link rel="icon" type="image/png" href="/images/favicon.png">-->
 
     <title>{{ page.title }} | Monochrome daydreaming</title>
-    <meta name="description" content="Monochrome daydreaming by Ivana Vasilj - {{ page.desc }}">
+    <meta name="description" content="Monochrome daydreaming by Ivana Vasilj -
+    {% if page.desc %}{{ page.desc }}{% else %}{{ page.title }}{% endif %}">
 
     <meta name="google-site-verification" content="HSE8oq5B95IDw_GW0h5wCy8Czl_AJIWa0VHznHX46Z8" />
   </head>
