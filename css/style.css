@@ -9,7 +9,7 @@
 }
 body {
   font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
-  margin:0 auto; width:500px; padding:0 0 10em 4em;
+  margin:0 auto; width:500px; padding:0 0 0 4em;
   border-left:3px double;
   background:snow; color:#222;
   /*background-image:url('/img/ivana-site-grid.png');*/
@@ -76,11 +76,11 @@ header a:focus, header a:active, header a:visited { outline:0 none }
 
 p a, .vcard ul a {
   color:#677D7C;
-  padding:0 .3em;
+  padding:0 .05em;
 }
 p a:hover, .vcard ul a:hover {
-  background:#F4F4F4;
-  border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px;
+  background:#eee;
+  border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
 }
 
 /* lists */
