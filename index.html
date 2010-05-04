@@ -1,8 +1,29 @@
 ---
 layout: default
-title: Ivana Vasilj
-desc: about Ivana, social links and contact
+title: Home
+desc: personal website &amp; blog
 ---
 
-{% include _about.html %}
-        
+<section>
+
+  {% for post in site.posts limit:1 %}
+  <article>
+
+    <header>
+      <h1>{{ post.title }} </h1>
+    </header>
+
+    {{ post.content }}
+
+    <footer>
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %e, %Y" }}</time>
+      <!--tags-->
+    </footer>
+
+  </article>
+  {% endfor %}
+
+  <footer>
+    <p><a href="/archive">~ blog archive ~</a></p>
+  </footer>
+</section>

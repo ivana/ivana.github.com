@@ -17,7 +17,10 @@ body {
   body > * { font-size:1.8em }
   body > header { padding-top:1.6em }
 
-header { display:block }
+header, article, footer { display:block }
+
+article + footer { margin-top:3.9em }
+  article + footer p { font-variant:small-caps }
 
 p {
   font-size:1em; line-height:1.5em;
