@@ -1,3 +1,6 @@
+---
+layout: nil
+---
 <?xml version="1.0" encoding="utf-8"?>
 
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -9,6 +12,7 @@
  <id>http://ivana.github.com/</id>
  <author>
    <name>Ivana Vasilj</name>
+   <uri>http://ivana.github.com/about/</uri>
    <email>ivasilj@gmail.com</email>
  </author>
 
