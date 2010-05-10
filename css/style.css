@@ -80,11 +80,11 @@ a {
 
 header a:focus, header a:active, header a:visited { outline:0 none }
 
-p a, .vcard ul a {
+p a {
   color:#677D7C;
   padding:0 .05em;
 }
-p a:hover, .vcard ul a:hover {
+p a:hover {
   background:#eee;
   border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
 }
@@ -97,6 +97,10 @@ ul, ol { list-style:inside none }
 .vcard h1 { margin-bottom:.3em }
 
 .vcard > a { display:block; bottom:5px }
+
+.vcard .photo {
+  float:left; margin:.5em 1.5em 0 0; width:200px;
+}
 
 .vcard ol { margin:2em 0 1.5em }
   .vcard ol li { display:inline; padding-left:1em }
@@ -112,8 +116,6 @@ ul, ol { list-style:inside none }
   .vcard ol a:hover {
     position:relative; bottom:2px; left:1px;
   }
-
-.vcard ul { line-height:1.5em; margin:-1em 0 1.5em }
 
 /* projects */
 #projects img { float:right; margin:.4em 0 0 1em }
