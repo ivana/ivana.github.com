@@ -7,7 +7,7 @@ layout: default
   {{ content }}
 
   <footer>
-    <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%B %e, %Y" }}</time>
+    <time datetime="{{ page.date | date: '%Y-%m-%d' }}" pubdate>{{ page.date | date: "%B %e, %Y" }}</time>
     <!--tags-->
   </footer>
 </article>
