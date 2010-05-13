@@ -4,31 +4,27 @@ title: Home
 desc: personal website &amp; blog
 ---
 
-<section>
+{% for post in site.posts limit:1 %}
+<article>
 
-  {% for post in site.posts limit:1 %}
-  <article>
+  <h1>{{ post.title }} </h1>
 
-    <h1>{{ post.title }} </h1>
-
-    {{ post.content }}
-
-    <footer>
-      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %e, %Y" }}</time>
-      <!--tags-->
-    </footer>
-
-  </article>
-  {% endfor %}
+  {{ post.content }}
 
   <footer>
-    <p><a href="/archive">~ blog archive ~</a></p>
+    <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: "%B %e, %Y" }}</time>
+    <!--tags-->
   </footer>
 
-  <!--[if IE]>
-  <script type="text/javascript">
-    alert("Hello Internet Explorer user. Sorry you see my site in such an ugly state. It's just that I'm as fast to support your browser as Microsoft is to support web standards.");
-  </script>
-  <![endif]-->
+</article>
+{% endfor %}
 
-</section>
+<footer>
+  <p><a href="/archive">~ blog archive ~</a></p>
+</footer>
+
+<!--[if IE]>
+<script type="text/javascript">
+  alert("Hello Internet Explorer user. Sorry you see my site in such an ugly state. It's just that I'm as fast to support your browser as Microsoft is to support web standards.");
+</script>
+<![endif]-->
