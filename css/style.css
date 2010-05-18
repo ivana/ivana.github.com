@@ -10,7 +10,7 @@
 body {
   font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
   margin:0 auto; width:500px; padding:0 0 1em 4em;
-  border-left:1px solid #91A2A7;
+  border-left:1px solid #677D7C;
   background:snow; color:#222;
   /*background-image:url('/img/ivana-site-grid.png');*/
 }
@@ -24,8 +24,7 @@ article + footer { margin-top:3.9em }
   article + footer p { font-variant:small-caps }
 
 p {
-  font-size:1em; line-height:1.5em;
-  text-indent:-0.3em;
+  font-size:1em; text-indent:-0.3em; line-height:1.5em;
   margin-bottom:1.5em;
 }
 
@@ -37,7 +36,7 @@ time { color:#91A2A7; font-style:italic }
 nav, .vcard > a {
   position:relative; right:560px;
 }
-nav { bottom:3px }
+nav { top:1.4em }
 nav li, .vcard > a {
   letter-spacing:0.05em;
   line-height:2.35em; font-size:.85em; text-align:right;
@@ -55,16 +54,15 @@ body > header h2, article h1, article h2, section h1, section h2, nav, .vcard > 
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
 }
 body > header h2 {
-  font-style:italic; font-size:.85em;
-  position:relative; left:110px; top:8px;
-  width:50%;
+  font-size:0.85em; font-style:italic; line-height:.9em; text-align:right;
+  position:relative; left:140px; top:.9em;
+  width:35%;
 }
-article h1, article h2, section h1, section h2 {
-  text-shadow:1px 1px 1px rgba(120, 120, 120, 0.3);
-}
-article h1, section h1 {
+
+article h1, section h1 { text-shadow:0 0 2px #777 }
+body > article > h1, body > section > h1 {
   font-size:2em; line-height:.9em;
-  margin:-0.35em 0 1.3em; padding:.1em 0;
+  margin:0.9em 0 1.3em; padding:.1em 0;
 }
 article h2, section h2 {
   font-size:1.5em; line-height:1em;
@@ -95,19 +93,14 @@ ul, ol { list-style:inside none }
 
 /* about */
 .vcard h1 { margin-bottom:.3em }
-
 .vcard > a { display:block; bottom:5px }
-
-.vcard .photo {
-  float:left; margin:.5em 1.5em 0 0; width:200px;
-}
-
-.vcard ol { margin:2em 0 1.5em }
+.vcard .photo { float:left; margin:.5em 1.5em 0 0 }
+  /* social links */
+  .vcard ol { margin:2em 0 1.5em }
   .vcard ol li { display:inline; padding-left:1em }
   .vcard ol li:first-child { padding-left:0 }
   .vcard ol img {
     border:3px double #555; width:40px;
-
     box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
     -moz-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
     -webkit-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
