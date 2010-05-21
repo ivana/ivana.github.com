@@ -24,7 +24,7 @@ article + footer { margin-top:3.9em }
   article + footer p { font-variant:small-caps }
 
 p {
-  font-size:1em; text-indent:-0.3em; line-height:1.5em;
+  font-size:1em; line-height:1.5em;
   margin-bottom:1.5em;
 }
 
@@ -33,7 +33,7 @@ p code, li code { font-size:1.1em }
 pre code {
   display:block;
   line-height:1.23em; white-space:pre-wrap;
-  margin:-1.9em 0 0 -2.75em; padding:0 1em 0 2.5em;
+  margin:-1.9em 0 0 -2.75em; padding:0 1em 0 2.8em;
 }
 pre code, blockquote {
   background:#eee; margin-bottom:-0.9em;
@@ -41,7 +41,7 @@ pre code, blockquote {
 }
 blockquote { margin:0 0 1em -2.25em; padding:1em .5em 0 2.25em }
   blockquote p:first-child:before { content:'“'; font-size:2em }
-  blockquote p:first-child { text-indent:-1.5em }
+  blockquote p:first-child { text-indent:-1.15em }
   blockquote p:last-child { padding-bottom:1em }
 
 img { border:0 none }
@@ -116,10 +116,16 @@ ul, ol { list-style:none inside }
 
 article ol, article ul {
   list-style-position:outside;
-  padding-left:1em; margin:1.6em 0 1.8em;
+  margin:1.6em 0 1.8em;
 }
-article ol { list-style-type:decimal }
-article ul { list-style-type:square }
+article ol {
+  list-style-type:decimal;
+  padding-left:1.35em;
+}
+article ul {
+  list-style-type:square;
+  padding-left:.95em;
+}
   article li { line-height:1.3em; margin-bottom:.3em }
 
 nav ul li:before { content:'= ' }
