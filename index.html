@@ -7,14 +7,12 @@ desc: personal website &amp; blog
 {% for post in site.posts limit:1 %}
 <article>
 
-  <h1>{{ post.title }} </h1>
+  <header>
+    <h1>{{ post.title }}</h1>
+    <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | date: "%B %e, %Y" }}</time>
+  </header>
 
   {{ post.content }}
-
-  <footer>
-    <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | date: "%B %e, %Y" }}</time>
-    <!--tags-->
-  </footer>
 
 </article>
 {% endfor %}

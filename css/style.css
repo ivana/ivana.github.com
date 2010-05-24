@@ -22,6 +22,7 @@ header, article, footer { display:block }
 
 article + footer { margin-top:3.9em }
   article + footer p { font-variant:small-caps }
+  article header + p { margin-top:-1.35em }
 
 p {
   font-size:1em; line-height:1.5em;
@@ -46,7 +47,12 @@ blockquote { margin:0 0 1em -2.25em; padding:1em .5em 0 2.25em }
 
 img { border:0 none }
 
-time { color:#91A2A7; font-style:italic }
+time { color:#677D7C; font-size:0.85em }
+  article header time {
+    display:block;
+    position:relative; right:17em; top:3px;
+    width:200px; text-align:right;
+  }
 
 em { font-style:normal; text-shadow:0 0 1px #333 }
 
