@@ -68,7 +68,7 @@ body > header h1 {
   font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.3em;
   line-height:.9em;
 }
-body > header h2, article h1, article h2, section h1, section h2, nav, .vcard > a {
+body > header h2, article h1, section h1, section h2, nav, #archive a, .vcard > a {
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
 }
 body > header h2 {
@@ -78,15 +78,15 @@ body > header h2 {
 }
 
 article h1, section h1 { text-shadow:0 0 2px #777 }
-body > article > h1, body > section > h1 {
+body > article header h1, body > section > h1 {
   font-size:2em; line-height:.9em;
   margin:0.9em 0 1.3em; padding:.1em 0;
 }
-article h2, section h2, body > article > section > h1 {
+section h2, body > article > section > h1, #archive a {
   font-size:1.5em; line-height:1em;
 }
-article h2, section h2 { margin:-0.2em 0 1.2em }
-body > article > section > h1 { margin:1.45em 0 1.2em }
+section h2 { margin:-0.2em 0 1.2em }
+body > article > section h1 { margin:1.45em 0 1.2em }
 body > article > section > section > h1 { margin:1.45em 0 1.2em; font-size:1.3em }
 
 /* anchors */
@@ -107,7 +107,7 @@ p a:hover, article li a:hover {
 }
 blockquote a:hover { background:#dfdfdf }
 
-section a h2:hover, section h2 a:hover {
+section a h2:hover, #archive a:hover {
   text-shadow:0 0 3px #777;
 }
 
@@ -155,6 +155,6 @@ nav ul li:before { content:'= ' }
 #projects a:active, a:visited { outline:0 none }
 
 /* archive */
-#archive h2 { display:inline; padding-right:.2em }
 #archive ol { line-height:1.9em; margin-top:-0.3em }
   #archive li { margin-top:1em }
+#archive a { padding-right:.5em }
