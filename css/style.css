@@ -7,7 +7,7 @@
   vertical-align:baseline;
   padding:0; margin:0;
 }
-header, article, footer { display:block }
+header, hgroup, article, section, footer { display:block }
 
 body {
   font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
@@ -78,7 +78,7 @@ body > header h1 {
   font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.3em;
   line-height:.9em;
 }
-body > header h2, article h1, section h1, section h2, nav, #archive a, .vcard > a {
+body > header h2, article h1, section h1, section h2, nav, #archive a, .vcard > a, .annotated a {
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
 }
 body > header h2 {
@@ -88,7 +88,7 @@ body > header h2 {
 }
 
 article h1, section h1 { text-shadow:0 0 2px #777 }
-body > article header h1, body > section > h1 {
+body > article header h1, body > section > h1, body > section hgroup h1 {
   font-size:2em; line-height:.9em;
   margin:0.9em 0 1.3em; padding:.1em 0;
 }
@@ -160,3 +160,29 @@ nav ul li:before { content:'= ' }
 #archive ol { line-height:1.9em; margin-top:-0.3em }
   #archive li { margin-top:1em }
 #archive a { padding-right:.5em }
+
+/* echoes */
+#echoes h2 {
+  font-size:.8em; font-family:inherit;
+  text-shadow:0 0 1px #777;
+  margin:-1.9em 0 2.7em;
+}
+#echoes section { clear:left }
+  #echoes section h1 {
+    font:inherit;
+    position:relative; right:10.4em;
+    text-align:right; width:7em;
+  }
+#echoes h1 img {
+  height:24px;
+  box-shadow:0 0 1px #bbb; -moz-box-shadow:0 0 1px #bbb; -webkit-box-shadow:0 0 1px #bbb; -o-box-shadow:0 0 1px #bbb;
+}
+.annotated ol a {
+  display:block; margin:-0.1em 0 .7em;
+  font-size:.85em; text-transform:uppercase;
+  text-shadow:0 0 1px #777;
+}
+#echoes q {
+  display:block; margin-bottom:1.5em;
+  line-height:1.5em;
+}
