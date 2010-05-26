@@ -145,19 +145,11 @@ nav ul li:before { content:'= ' }
 .vcard > a { display:block; bottom:5px }
 .vcard .photo { float:left; margin:.5em 1.5em 0 0 }
   /* social links */
-  .vcard ol { margin:2em 0 1.5em }
+.vcard ol { margin:2em 0 1.5em }
   .vcard ol li { display:inline; padding-left:1em }
   .vcard ol li:first-child { padding-left:0 }
-  .vcard ol img {
-    border:3px double #555; width:40px;
-    box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-    -moz-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-    -webkit-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-    -o-box-shadow:1px 1px 1px rgba(120, 120, 120, 0.4);
-  }
-  .vcard ol a:hover {
-    position:relative; bottom:2px; left:1px;
-  }
+  .vcard ol img { border:3px double #BBB; width:40px }
+  .vcard ol a:hover { position:relative; bottom:2px; left:1px }
 
 /* projects */
 #projects img { float:right; margin:.4em 0 0 1em }
