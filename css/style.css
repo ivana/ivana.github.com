@@ -13,12 +13,12 @@ body {
   font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
   margin:0 auto; width:500px; padding:0 0 1em 4em; border-left:1px solid #ddd;
   background:snow; color:#222;
-  /*background-image:url('/img/ivana-site-grid.png');*/
+/*  background-image:url('/img/ivana-site-grid.png');*/
 }
   body > * { font-size:1.8em }
 
   body > header { padding-top:1.6em }
-      body > header img { float:right }
+    body > header img { float:right }
 
 footer {
   margin:7em 0 1em; padding-top:2em;
@@ -164,10 +164,11 @@ nav ul li:before { content:'= ' }
 /* echoes */
 #echoes h2 {
   font-size:.8em; font-family:inherit;
-  text-shadow:0 0 1px #777;
+  text-shadow:0 0 1px rgba(127, 127, 127, .3);
   margin:-1.9em 0 2.7em;
 }
 #echoes section { clear:left }
+  #echoes > p { margin-top:2.6em }
   #echoes section h1 {
     font:inherit;
     position:relative; right:10.4em;
@@ -178,11 +179,12 @@ nav ul li:before { content:'= ' }
   box-shadow:0 0 1px #bbb; -moz-box-shadow:0 0 1px #bbb; -webkit-box-shadow:0 0 1px #bbb; -o-box-shadow:0 0 1px #bbb;
 }
 .annotated ol a {
-  display:block; margin:-0.1em 0 .7em;
+  display:block; margin-top:-0.1em;
   font-size:.85em; text-transform:uppercase;
-  text-shadow:0 0 1px #777;
+  color:#677D7C;
 }
-#echoes q {
-  display:block; margin-bottom:1.5em;
-  line-height:1.5em;
-}
+.annotated p, .annotated q { font-size:.85em; margin-top:.2em }
+#echoes li { margin-bottom:1.2em }
+#echoes q { display:block; line-height:1.5em }
+#echoes #flickr li { display:inline }
+#echoes #flickr li img { border:1px solid #bbb; height:180px; margin-right:8px }
