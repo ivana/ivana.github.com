@@ -33,18 +33,19 @@ p {
 }
   article header + p { margin-top:-1.35em }
 
-code, blockquote { color:#555 }
+code, blockquote, #echoes #twitter q { color:#555 }
 p code, li code { font-size:1.1em }
 pre code {
   display:block;
   line-height:1.23em; white-space:pre-wrap;
   margin:-1.9em 0 0 -2.75em; padding:0 1em 0 2.8em;
 }
-pre code, blockquote {
+pre code, blockquote, #echoes #twitter q {
   background:#eee; margin-bottom:-0.9em;
   border-radius:0 9px 9px 0; -webkit-border-radius:0 9px 9px 0; -moz-border-radius:0 9px 9px 0;
 }
-blockquote { margin:0 0 1em -2.25em; padding:1em .5em 0 2.25em }
+blockquote, #echoes #twitter q { margin:0 0 1em -2.25em }
+blockquote { padding:1em .5em 0 2.25em }
   blockquote p:first-child:before { content:'“'; font-size:2em }
   blockquote p:first-child { text-indent:-1.15em }
   blockquote p:last-child { padding-bottom:1em }
@@ -186,5 +187,8 @@ nav ul li:before { content:'= ' }
 .annotated p, .annotated q { font-size:.85em; margin-top:.2em }
 #echoes li { margin-bottom:1.2em }
 #echoes q { display:block; line-height:1.5em }
+  #echoes #twitter q { padding:.2em .5em .4em 2.25em; text-indent:-0.9em; quotes:none }
+  #echoes #twitter q:before { content:'“'; font-size:2em }
+  #echoes #twitter q:after { content:'' } /* Webkit */
 #echoes #flickr li { display:inline }
 #echoes #flickr li img { border:1px solid #bbb; height:180px; margin-right:8px }
