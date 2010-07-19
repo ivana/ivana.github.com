@@ -112,7 +112,7 @@ p a, article li a, footer a {
   color:#677D7C;
   padding:0 .05em;
 }
-p a:hover, article li a:hover, footer a:hover {
+p a:hover, article li a:hover, footer a:hover, .annotated ol a:hover {
   background:#eee;
   border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
 }
