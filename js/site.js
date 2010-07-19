@@ -19,7 +19,7 @@ $(function(){
               } else $('#delicious ol').append('<li><a href="' + item.link + '">' + item.title + '</a></li>');
               break;
             case 'twitter':
-              $('#twitter ol').append('<li><a href="' + item.link + '"><q>' + item.title + '</q></a></li>');
+              $('#twitter ol').append('<li><a href="' + item.link + '"><q cite="' + item.link + '">' + item.title + '</q></a></li>');
               break;
             case 'greader':
               if(typeof item['gr:annotation'] != 'undefined'){
