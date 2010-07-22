@@ -9,8 +9,8 @@ $(function(){
 
     // echoes
     if(currentPage == 'echoes'){
-
       $.getJSON('http://pipes.yahoo.com/ivana/echoes?_render=json&_callback=?', function(data){
+        
         $.each(data.value.items, function(i, item){
           switch(item.src){
             case 'delicious':
@@ -28,6 +28,9 @@ $(function(){
               break;
             case 'flickr':
               $('#flickr ol').append('<li><a href="' + item.link[0] + '"><img src="' + item.link[2] + '" alt="' + item.title + '" /></a></li>');
+              break;
+            case 'lastfm':
+              $('#lastfm p').append('<a href="' + item.url + '">' + item.name + ' </a>');
               break;
           }
         });
