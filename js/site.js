@@ -15,7 +15,7 @@ $(function(){
           switch(item.src){
             case 'delicious':
               if(item.description){
-                $('#delicious ol').append('<li><a href="' + item.link + '">' + item.title + '</a><p>' + item.description + '</p></li>');
+                $('#delicious ol').append('<li><a href="' + item.link + '">' + item.title + '</a><q>' + item.description + '</q></li>');
               } else $('#delicious ol').append('<li><a href="' + item.link + '">' + item.title + '</a></li>');
               break;
             case 'twitter':
