@@ -4,18 +4,14 @@ title: Home
 desc: personal website &amp; blog
 ---
 
-{% for post in site.posts limit:1 %}
 <article>
-
   <header>
-    <h1>{{ post.title }}</h1>
-    <time datetime="{{ post.date | date: '%Y-%m-%d' }}" pubdate>{{ post.date | date: "%B %e, %Y" }}</time>
+    <h1>{{ site.posts[0].title }}</h1>
+    <time datetime="{{ site.posts[0].date | date: '%Y-%m-%d' }}" pubdate>{{ site.posts[0].date | date: "%B %e, %Y" }}</time>
   </header>
 
-  {{ post.content }}
-
+  {{ site.posts[0].content }}
 </article>
-{% endfor %}
 
 <!--[if IE]>
 <script type="text/javascript">
