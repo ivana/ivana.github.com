@@ -7,7 +7,7 @@
   vertical-align:baseline;
   padding:0; margin:0;
 }
-header, hgroup, article, section, footer { display:block }
+header, hgroup, article, section, footer, aside { display:block }
 
 body {
   font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
@@ -20,6 +20,8 @@ body {
   body > header { padding-top:1.6em }
     body > header img { float:right }
 
+aside, footer { font-size:1.6em }
+aside { margin-top:3.4em }
 footer {
   margin:7em 0 1em; padding-top:2em;
   font-size:1.6em;
@@ -108,11 +110,11 @@ a {
 
 header a:focus, header a:active, header a:visited { outline:0 none }
 
-p a, article li a, footer a {
+p a, article li a, footer a, aside a {
   color:#677D7C;
   padding:0 .05em;
 }
-p a:hover, article li a:hover, footer a:hover, .annotated ol a:hover {
+p a:hover, article li a:hover, footer a:hover, aside a:hover, .annotated ol a:hover {
   background:#eee;
   border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
 }
