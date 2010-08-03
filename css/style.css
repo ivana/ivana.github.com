@@ -78,7 +78,7 @@ nav a:hover:before, .vcard > a:hover:before { content:'= ' }
 
 /* headings */
 body > header h1 {
-  font-family:Mido, "Theano Didot", didot, georgia, "times new roman", times, serif; font-size:3.3em;
+  font-family:Mido, "Theano Didot", didot, "times new roman", times, serif; font-size:3.3em;
   line-height:.9em;
 }
 body > header h2, article h1, section h1, section h2, nav, #archive a, .vcard > a, .annotated a {
