@@ -2,9 +2,11 @@ $(function(){
 
   $(window).load(function(){
 
+    // current page indicator
     var currentPage = window.location.pathname.split('/')[window.location.pathname.split('/').length - 2];
     $('nav a[href=/' + currentPage + ']').parent().html($('nav a[href=/' + currentPage + ']').html() + ' =');
 
+    // min height determined by screen, not content
     $('body').css('min-height', screen.availHeight);
 
     // echoes
@@ -38,5 +40,5 @@ $(function(){
     }
 
   });
-
+  
 });
