@@ -7,7 +7,7 @@
   vertical-align:baseline;
   padding:0; margin:0;
 }
-header, hgroup, article, section, footer, aside { display:block }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block }
 
 body {
   font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
