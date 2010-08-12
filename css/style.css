@@ -35,12 +35,12 @@ p {
 }
   article header + p { margin-top:-1.35em }
 
+code { font:.95em courier, monospace;}
 code, blockquote, #echoes #twitter q { color:#555 }
-p code, li code { font-size:1.1em }
 pre code {
   display:block;
-  line-height:1.23em; white-space:pre-wrap;
-  margin:-1.9em 0 0 -2.75em; padding:0 1em 0 2.8em;
+  font-size:14px; line-height:18px; white-space:pre-wrap;
+  margin:-1.9em 0 0 -40px; padding:0 1em 0 40px;
 }
 pre code, blockquote, #echoes #twitter q {
   background:#eee; margin-bottom:-0.9em;
