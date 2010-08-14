@@ -152,7 +152,7 @@ nav ul li:before { content:'= ' }
   .vcard ol li { display:inline; padding-left:1em }
   .vcard ol li:first-child { padding-left:0 }
   .vcard ol img { border:3px double #BBB; width:40px }
-  .vcard ol a:hover { position:relative; bottom:2px; left:1px }
+  .vcard ol a:hover { position:relative; bottom:2px; left:1px; background:none }
 
 /* projects */
 #projects img { float:right; margin:.4em 0 0 1em }
