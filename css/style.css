@@ -146,7 +146,7 @@ nav ul li:before { content:'= ' }
 /* about */
 .vcard h1 { margin-bottom:.3em }
 .vcard > a { display:block; bottom:5px }
-.vcard .photo { float:left; margin:.5em 1.5em 0 0 }
+.vcard .photo { float:left; margin:.5em 1em 0 0 }
   /* social links */
 .vcard ol { margin:2em 0 1.5em; padding-left:0 }
   .vcard ol li { display:inline; padding-left:1em }
