@@ -14,6 +14,14 @@ $(function(){
       $.each(data.value.items, function(i, item){
         switch(item.src){
           
+          case 'diigo':
+            var anchor = '<a href="' + item.link + '">' + item.title + '</a>';
+            var time = '<time>' + DateUtil.myFormat(new Date(item.pubDate)) + '</time>';
+
+            $('#diigo ol').append('<li>' + anchor + time + '</li>');
+
+            break;
+
           case 'delicious':
             var anchor = '<a href="' + item.link + '">' + item.title + '</a>';
             var time = '<time>' + DateUtil.myFormat(new Date(item.pubDate)) + '</time>';

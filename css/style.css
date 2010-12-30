@@ -54,7 +54,7 @@ blockquote { padding:1em .5em 0 2.25em }
 
 img { border:0 none }
 
-time { color:#677D7C; font-size:0.85em }
+time { font-size:0.85em }
   article header time {
     display:block;
     position:relative; right:17em; top:3px;
