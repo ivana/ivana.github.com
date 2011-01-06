@@ -184,7 +184,7 @@ nav ul li:before { content:'= ' }
 #echoes li { margin-bottom:1.2em; font-size:.85em }
 .annotated ol a {
   display:block; margin-top:-0.1em;
-  text-transform:uppercase;
+  font-variant:small-caps; font-size:1.05em;
   color:#677D7C;
 }
 .annotated p, .annotated q { margin-top:.2em }
