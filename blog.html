@@ -1,0 +1,18 @@
+---
+layout: default
+title: Blog
+permalink: blog/
+---
+
+<article>
+  <header>
+    <h1>{{ site.posts[0].title }}</h1>
+    <time datetime="{{ site.posts[0].date | date: '%Y-%m-%d' }}" pubdate>{{ site.posts[0].date | date: "%B %e, %Y" }}</time>
+  </header>
+
+  {{ site.posts[0].content }}
+</article>
+
+<aside>
+  Previously: <a href="{{ site.posts[0].previous.url }}">{{ site.posts[0].previous.title }}</a>
+</aside>
