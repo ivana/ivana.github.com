@@ -11,9 +11,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
-  margin:0 auto; width:500px; padding:0 0 1em 4em; border-left:1px solid #ddd;
+  margin:0 auto; width:518px; padding:0 0 1em 4em; border-left:1px solid #ddd;
   background:snow; color:#222;
-/*  background-image:url('/img/ivana-site-grid.png');*/
+/*  background-image:url('/img/grid-27.png');*/
 }
   body > * { font-size:1.8em }
 
@@ -57,7 +57,7 @@ img { border:0 none }
 time { font-size:0.85em }
   article header time {
     display:block;
-    position:relative; right:17em; top:3px;
+    position:relative; right:17em; top:1px;
     width:200px; text-align:right;
   }
 
@@ -65,20 +65,19 @@ em { font-style:normal; text-shadow:0 0 1px #333 }
 
 /* nav */
 nav, .vcard > a {
-  position:relative; right:560px;
+  position:relative; right:575px;
 }
-nav { top:1.4em }
+nav { top:7px }
 nav li, .vcard > a {
-  letter-spacing:0.05em;
-  line-height:2.35em; font-size:.85em; text-align:right;
+  letter-spacing:0.05em; line-height:1.76em; text-align:right;
+  font-size:.85em;
 }
-
 nav a, .vcard > a { text-decoration:none }
 nav a:hover:before, .vcard > a:hover:before { content:'= ' }
 
 /* headings */
 body > header h1 {
-  font-family:Mido, "Theano Didot", didot, "times new roman", times, serif; font-size:3.3em;
+  font-family:Mido, "Theano Didot", "times new roman", times, serif; font-size:3.3em;
   line-height:.9em;
 }
 body > header h2, article h1, section h1, section h2, nav, #archive a, .vcard > a, .annotated a {
@@ -92,15 +91,15 @@ body > header h2 {
 
 article h1, section h1 { text-shadow:0 0 2px #777 }
 body > article header h1, body > article > h1, body > section > h1, body > section hgroup h1 {
-  font-size:2em; line-height:.9em;
-  margin:0.9em 0 1.3em; padding:.1em 0;
+  font-size:2em;
+  line-height:1.2em; margin:0 0 1.1em; padding:.1em 0;
 }
 section h2, body > article > section > h1, #archive a {
   font-size:1.5em; line-height:1em;
 }
 section h2 { margin:-0.2em 0 1.2em }
-body > article > section h1 { margin:1.45em 0 1.2em }
-body > article > section > section > h1 { margin:1.45em 0 1.2em; font-size:1.3em }
+body > article > section h1 { margin:1em 0 }
+body > article > section > section > h1 { font-size:1.3em }
 
 /* anchors */
 a {
@@ -129,7 +128,7 @@ ul, ol { list-style:none inside }
 
 article ol, article ul {
   list-style-position:outside;
-  margin:1.6em 0 1.8em;
+  margin:1.5em 0;
 }
 article ol {
   list-style-type:decimal;
@@ -139,13 +138,14 @@ article ul {
   list-style-type:square;
   padding-left:.95em;
 }
-  article li { line-height:1.3em; margin-bottom:.3em }
+  article li { line-height:1.5em }
 
 nav ul li:before { content:'= ' }
 
 /* about */
-.vcard h1 { margin-bottom:.3em }
-.vcard > a { display:block; bottom:5px }
+.vcard h1 { margin-bottom:.33em }
+.vcard .n { text-shadow:0px 0px 1px #777 }
+.vcard > a { display:block; top:107px }
 .vcard .photo { float:left; margin:.5em 1em 0 0 }
   /* social links */
 .vcard ol { margin:2em 0 1.5em; padding-left:0 }
@@ -160,7 +160,7 @@ nav ul li:before { content:'= ' }
 #projects a:active, a:visited { outline:0 none }
 
 /* archive */
-#archive ol { line-height:1.9em; margin-top:-0.3em }
+#archive ol { line-height:1.75em; margin-top:-0.3em }
   #archive li { margin-top:1em }
 #archive a { padding-right:.5em }
 
@@ -182,8 +182,9 @@ nav ul li:before { content:'= ' }
   box-shadow:0 0 1px #bbb; -moz-box-shadow:0 0 1px #bbb; -webkit-box-shadow:0 0 1px #bbb; -o-box-shadow:0 0 1px #bbb;
 }
 #echoes li { margin-bottom:1.2em; font-size:.85em }
+.annotated ol { margin-top:-0.2em }
 .annotated ol a {
-  display:block; margin-top:-0.1em;
+  display:block; margin-top:-0.1em; line-height:1.2em;
   font-variant:small-caps; font-size:1.05em;
   color:#677D7C;
 }
