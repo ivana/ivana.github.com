@@ -150,7 +150,8 @@ nav ul li:before { content:'= ' }
   .vcard ol a:hover { position:relative; bottom:2px; left:1px; background:none }
 
 /* projects */
-#projects img { float:right; margin:.4em 0 0 1em }
+#projects h2 { font-size:20px; line-height:28px; margin-bottom:29px; }
+#projects img { float:right; margin:.4em 0 0 1.5em }
 #projects p { text-align:justify }
 #projects a:active, a:visited { outline:0 none }
 
