@@ -57,30 +57,27 @@ img { border:0 none }
 time { font-size:0.85em }
   article header time {
     display:block;
-    position:relative; right:17em; top:1px;
+    position:relative; right:17em; top:2px;
     width:200px; text-align:right;
   }
 
 em { font-style:normal; text-shadow:0 0 1px #333 }
 
 /* nav */
-nav, .vcard > a {
-  position:relative; right:575px;
+nav { position:relative; right:575px; top:5px; }
+nav li {
+  letter-spacing:.03em; line-height:20px; text-align:right;
+  font-size:14px;
 }
-nav { top:7px }
-nav li, .vcard > a {
-  letter-spacing:0.05em; line-height:1.76em; text-align:right;
-  font-size:.85em;
-}
-nav a, .vcard > a { text-decoration:none }
-nav a:hover:before, .vcard > a:hover:before { content:'= ' }
+nav a { text-decoration:none }
+nav a:hover:before { content:'= ' }
 
 /* headings */
 body > header h1 {
   font-family:Mido, "Theano Didot", "times new roman", times, serif; font-size:3.3em;
   line-height:.9em;
 }
-body > header h2, article h1, section h1, section h2, nav, #archive a, .vcard > a, .annotated a {
+body > header h2, article h1, section h1, section h2, nav, #archive a, .annotated a {
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
 }
 body > header h2 {
@@ -143,9 +140,7 @@ article ul {
 nav ul li:before { content:'= ' }
 
 /* about */
-.vcard h1 { margin-bottom:.33em }
 .vcard .n { text-shadow:0px 0px 1px #777 }
-.vcard > a { display:block; top:80px }
 .vcard .photo { float:left; margin:.5em 1em 0 0 }
   /* social links */
 .vcard ol { margin:2em 0 1.5em; padding-left:0 }
