@@ -1,4 +1,4 @@
-@font-face { font-family:Mido; src:url("/fonts/Mido.otf") }
+/*@font-face { font-family:Mido; src:url("/fonts/Mido.otf") }*/
 @font-face { font-family:"Latin Modern Sans"; src:url("/fonts/lmsans10-regular.otf") }
 @font-face { font-family:"Latin Modern Sans"; src:url("/fonts/lmsans10-oblique.otf"); font-style:italic }
 @font-face { font-family:"Theano Didot"; src:url("/fonts/TheanoDidot-Regular.ttf") }
@@ -91,7 +91,7 @@ body > article header h1, body > article > h1, body > section > h1, body > secti
   font-size:2em;
   line-height:1.2em; margin:0 0 1.1em; padding:.1em 0;
 }
-section h2, body > article > section > h1, #archive a {
+section h2, body > article > section > h1 {
   font-size:1.5em; line-height:1em;
 }
 section h2 { margin:-0.2em 0 1.2em }
@@ -157,8 +157,8 @@ nav ul li:before { content:'= ' }
 
 /* archive */
 #archive ol { line-height:1.75em; margin-top:-0.3em }
-  #archive li { margin-top:1em }
-#archive a { padding-right:.5em }
+  #archive li { margin-top:.3em }
+#archive a { padding-right:.5em; font-size:20px; }
 
 /* echoes */
 #echoes h2 {
