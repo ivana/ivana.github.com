@@ -3,3 +3,6 @@ pygments: true
 server: true
 server_port: 4567
 permalink: /:year/:month/:title
+markdown: rdiscount
+rdiscount:
+  extensions: [smart]
