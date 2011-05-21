@@ -150,10 +150,13 @@ nav ul li:before { content:'= ' }
   .vcard ol a:hover { position:relative; bottom:2px; left:1px; background:none }
 
 /* projects */
+#projects li { margin-bottom:55px; }
 #projects h2 { font-size:20px; line-height:28px; margin-bottom:29px; }
-#projects img { float:right; margin:.4em 0 0 1.5em }
-#projects p { text-align:justify }
 #projects a:active, a:visited { outline:0 none }
+#projects img { border:1px solid #ddd }
+#listas img { float:right; margin:.4em 0 0 1.5em; }
+#listas p { text-align:justify }
+#movi img { float:left; margin:.4em 1.5em 0 0; }
 
 /* archive */
 #archive ol { line-height:1.75em; margin-top:-0.3em }
