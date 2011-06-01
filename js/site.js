@@ -15,22 +15,14 @@ $(function(){
       $.each(data.value.items, function(i, item){
         switch(item.src){
           
-          case 'diigo':
-            var anchor = '<a href="' + item.link + '">' + item.title + '</a>';
-            var time = '<time>' + DateUtil.myFormat(new Date(item.pubDate)) + '</time>';
-
-            $('#diigo ol').append('<li>' + anchor + time + '</li>');
-
-            break;
-
-          case 'delicious':
-            var anchor = '<a href="' + item.link + '">' + item.title + '</a>';
-            var time = '<time>' + DateUtil.myFormat(new Date(item.pubDate)) + '</time>';
-            
-            if(item.description) $('#delicious ol').append('<li>' + anchor + '<q>' + item.description + '</q>' + time + '</li>');
-            else $('#delicious ol').append('<li>' + anchor + time + '</li>');
-            
-            break;
+          // case 'delicious':
+          //   var anchor = '<a href="' + item.link + '">' + item.title + '</a>';
+          //   var time = '<time>' + DateUtil.myFormat(new Date(item.pubDate)) + '</time>';
+          //   
+          //   if(item.description) $('#delicious ol').append('<li>' + anchor + '<q>' + item.description + '</q>' + time + '</li>');
+          //   else $('#delicious ol').append('<li>' + anchor + time + '</li>');
+          //   
+          //   break;
           
           case 'twitter':
             var anchor = '<a href="' + item.link + '"><q cite="' + item.link + '">' + item.title + '</q></a>';
