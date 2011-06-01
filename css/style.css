@@ -199,4 +199,4 @@ nav ul li:before { content:'= ' }
   #echoes #twitter q:after { content:'' } /* Webkit */
 #echoes #lastfm p { font-size:.85em }
 #echoes #flickr li { display:inline }
-#echoes #flickr li img { border:1px solid #bbb; height:180px; margin-right:8px }
+#echoes #flickr li img { border:1px solid #bbb; margin-right:8px }

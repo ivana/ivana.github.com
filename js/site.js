@@ -43,7 +43,11 @@ $(function(){
             break;
         
           case 'flickr':
-            var anchor = '<a href="' + item.link[0] + '"><img src="' + item.link[2] + '" alt="' + item.title + '" /></a>';
+          /* find something like http://farm3.static.flickr.com/2182/5785913956_007e54dc7c_m.jpg,
+            turn it to http:\/\/farm3.static.flickr.com\/2182\/5785913956_007e54dc7c_m_d.jpg
+            because we want the Medium 500 size of the photo from Flickr */
+            var imgsrc = item.content.content.match(/http:\/\/farm.+.jpg/)[0].replace('_m.jpg', '_d.jpg');
+            var anchor = '<a href="' + item.link + '"><img src="' + imgsrc + '" alt="' + item.title + '" /></a>';
 
             $('#flickr ol').append('<li>' + anchor + '</li>');
             break;
