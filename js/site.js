@@ -27,9 +27,9 @@ $(function(){
           case 'twitter':
             var anchor = '<a href="' + item.link + '"><q cite="' + item.link + '">' + item.title + '</q></a>';
             var time = '<time>' + DateUtil.myFormat(new Date(item.pubDate)) + ' ' + DateUtil.getHoursAndMinutes(new Date(item.pubDate)) +  '</time>';
-            
+
             $('#twitter ol').append('<li>' + anchor + time + '</li>');
-            
+
             break;
         
           case 'greader':
@@ -48,9 +48,9 @@ $(function(){
             $('#flickr ol').append('<li>' + anchor + '</li>');
             break;
         
-          case 'lastfm':
-            $('#lastfm p').append('<a href="' + item.url + '">' + item.name + ' </a>');
-            break;
+          // case 'lastfm':
+          //   $('#lastfm p').append('<a href="' + item.url + '">' + item.name + ' </a>');
+          //   break;
         }
       });
     });
