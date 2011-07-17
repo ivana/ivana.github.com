@@ -17,7 +17,7 @@ $(function(){
           
           // case 'delicious':
           //   var anchor = '<a href="' + item.link + '">' + item.title + '</a>';
-          //   var time = '<time>' + DateUtil.myFormat(new Date(item.pubDate)) + '</time>';
+          //   var time = '<time>' + DateUtil.myDateFormat(item.pubDate) + '</time>';
           //   
           //   if(item.description) $('#delicious ol').append('<li>' + anchor + '<q>' + item.description + '</q>' + time + '</li>');
           //   else $('#delicious ol').append('<li>' + anchor + time + '</li>');
@@ -26,7 +26,9 @@ $(function(){
           
           case 'twitter':
             var anchor = '<a href="' + item.link + '"><q cite="' + item.link + '">' + item.title + '</q></a>';
-            var time = '<time>' + DateUtil.myFormat(new Date(item.pubDate)) + ' ' + DateUtil.getHoursAndMinutes(new Date(item.pubDate)) +  '</time>';
+
+            // datetime string format from twitter (item.pubDate): Sat, 16 Jul 2011 13:57:44 +0000
+            var time = '<time>' + DateUtil.myDateFormat(new Date(item.pubDate)) + ' ' + DateUtil.getHoursAndMinutes(new Date(item.pubDate)) +  '</time>';
 
             $('#twitter ol').append('<li>' + anchor + time + '</li>');
 
@@ -34,7 +36,13 @@ $(function(){
         
           case 'greader':
             var anchor = '<a href="' + item.link + '">' + item.title + '</a>';
-            var time = '<time>' + DateUtil.myFormat(new Date(item.published)) + '</time>';
+
+            // datetime string format from greader (item.published): 2011-07-09T11:04:42Z
+            // new Date('2011-07-09T11:04:42Z') reports invalid date in Safari => haven't come up with better solution than this
+            var year = item.published.match(/\d{4}/)[0];
+            var month = item.published.match(/-\d\d-/)[0].match(/\d\d/)[0];
+            var day = item.published.match(/-\d\dT/)[0].match(/\d\d/)[0];
+            var time = '<time>' + DateUtil.myDateFormat(new Date(year * 1, month * 1 - 1, day * 1)) + '</time>';
             
             if(typeof item['gr:annotation'] != 'undefined') {
               $('#greader ol').append('<li>' + anchor + '<q>' + item['gr:annotation'].content.content + '</q>' + time + '</li>');
@@ -61,13 +69,12 @@ $(function(){
   }
   
   DateUtil = {
-    myFormat: function(date){
+    myDateFormat: function(date){
       return this.monthName[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear();
     },
     
     getHoursAndMinutes: function(date){
-      var time = date.toLocaleTimeString();
-      return time.match(/^\d\d:\d\d/)[0];
+      return date.toUTCString().match(/\d\d:\d\d/)[0] + ' GMT';
     },
     
     monthName:['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
