@@ -87,7 +87,7 @@ body > header h2 {
 }
 
 article h1, section h1 { text-shadow:0 0 2px #777 }
-body > article header h1, body > article > h1, body > section > h1, body > section hgroup h1 {
+body > article header h1, body > article > h1, body > section > h1, body > section hgroup h1, #projects h1 {
   font-size:2em;
   line-height:1.2em; margin:0 0 1.1em; padding:.1em 0;
 }
@@ -150,11 +150,11 @@ nav ul li:before { content:'= ' }
   .vcard ol a:hover { position:relative; bottom:2px; left:1px; background:none }
 
 /* projects */
-#projects li { margin-bottom:55px; }
-#projects h2 { font-size:20px; line-height:28px; margin-bottom:29px; }
+#projects > h1 { display:none; }
+#projects article { margin-bottom:55px; }
 #projects a:active, a:visited { outline:0 none }
 #projects img { border:1px solid #ddd }
-#listas img { float:right; margin:.4em 0 0 1.5em; }
+#listas img { float:right; margin:.4em 0 1em 1.5em; }
 #listas p { text-align:justify }
 #movi img { float:left; margin:.4em 1.5em 0 0; }
 
