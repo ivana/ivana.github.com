@@ -73,17 +73,8 @@ nav a { text-decoration:none }
 nav a:hover:before { content:'= ' }
 
 /* headings */
-body > header h1 {
-  font-family:Mido, "Theano Didot", "times new roman", times, serif; font-size:3.3em;
-  line-height:.9em;
-}
-body > header h2, article h1, section h1, section h2, nav, #archive a, .annotated a {
+article h1, section h1, nav, #archive a, .annotated a {
   font-family:"Latin Modern Sans", tahoma, arial, helvetica, sans-serif; font-weight:normal;
-}
-body > header h2 {
-  font-size:0.85em; font-style:italic; line-height:.9em; text-align:right;
-  position:relative; left:140px; top:.9em;
-  width:35%;
 }
 
 article h1, section h1 { text-shadow:0 0 2px #777 }
@@ -91,10 +82,9 @@ body > article header h1, body > article > h1, body > section > h1, body > secti
   font-size:2em;
   line-height:1.2em; margin:0 0 1.1em; padding:.1em 0;
 }
-section h2, body > article > section > h1 {
+body > article > section > h1 {
   font-size:1.5em; line-height:1em;
 }
-section h2 { margin:-0.2em 0 1.2em }
 body > article > section h1 { margin:1em 0 }
 body > article > section > section > h1 { font-size:1.3em }
 
@@ -115,10 +105,6 @@ p a:hover, article li a:hover, footer a:hover, aside a:hover, .annotated ol a:ho
   border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
 }
 blockquote a:hover { background:#dfdfdf }
-
-section a h2:hover, #archive a:hover {
-  text-shadow:0 0 3px #777;
-}
 
 /* lists */
 ul, ol { list-style:none inside }
@@ -162,13 +148,9 @@ nav ul li:before { content:'= ' }
 #archive ol { line-height:1.75em; margin-top:-0.3em }
   #archive li { margin-top:.3em }
 #archive a { padding-right:.5em; font-size:20px; }
+#archive a:hover { text-shadow:0 0 3px #777; }
 
 /* echoes */
-#echoes h2 {
-  font-size:.8em; font-family:inherit;
-  text-shadow:0 0 1px rgba(127, 127, 127, .3);
-  margin:-1.9em 0 2.7em;
-}
 #echoes section { clear:left }
   #echoes > p { margin-top:2.6em }
   #echoes section h1 {
