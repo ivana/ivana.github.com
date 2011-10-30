@@ -136,13 +136,15 @@ nav ul li:before { content:'= ' }
   .vcard ol a:hover { position:relative; bottom:2px; left:1px; background:none }
 
 /* projects */
-#projects > h1 { display:none; }
-#projects article { margin-bottom:55px; }
+#projects > h1 { position:absolute; left:-10000px; }
+#projects h1 { margin-bottom:.5em; }
+#projects article { margin-bottom:30px; }
+#projects p { margin-bottom:1em; }
 #projects a:active, a:visited { outline:0 none }
 #projects img { border:1px solid #ddd }
 #listas img { float:right; margin:.4em 0 1em 1.5em; }
 #listas p { text-align:justify }
-#movi img { float:left; margin:.4em 1.5em 0 0; }
+/*#movi img { float:left; margin:.4em 1.5em 0 0; }*/
 
 /* archive */
 #archive ol { line-height:1.75em; margin-top:-0.3em }
