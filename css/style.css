@@ -127,7 +127,7 @@ nav ul li:before { content:'= ' }
 
 /* about */
 .vcard .n { text-shadow:0px 0px 1px #777 }
-.vcard .photo { float:left; margin:.5em 1em 0 0 }
+.vcard .photo { float:left; margin:7px 1em 0 0; border:1px solid #777; }
   /* social links */
 .vcard ol { margin:2em 0 1.5em; padding-left:0 }
   .vcard ol li { display:inline; padding-left:1em }
