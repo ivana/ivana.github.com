@@ -126,10 +126,12 @@ article ul {
 nav ul li:before { content:'= ' }
 
 /* about */
-.vcard a.fn { color:inherit; }
-.vcard a.fn:hover { background:inherit; }
 .vcard .n, .vcard strong { text-shadow:0px 0px 1px #777 }
 .vcard strong { font-weight:normal; }
+.vcard a.email {
+  display: block; width:110px; padding: 0 5px;
+  position: relative; right: 9.2em; bottom: 1.5em; margin-bottom: -1.5em;
+}
 .vcard .photo { float:left; margin:7px 1em 0 0; border:1px solid #777; }
   /* social links */
 .vcard ol { margin:2em 0 1.5em; padding-left:0 }
