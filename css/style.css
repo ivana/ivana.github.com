@@ -42,9 +42,7 @@ pre code {
   font-size:14px; line-height:18px; white-space:pre-wrap;
   margin:-1.9em 0 0 -40px; padding:0 1em 0 40px;
 }
-pre code, blockquote {
-  background:#eee; margin-bottom:-0.9em;
-  border-radius:0 9px 9px 0; -webkit-border-radius:0 9px 9px 0; -moz-border-radius:0 9px 9px 0;
+pre code, blockquote { background:#eee; margin-bottom:-0.9em; border-radius:0 9px 9px 0; }
 }
 blockquote { margin:0 0 1em -2.25em }
 blockquote { padding:1em .5em 0 2.25em }
@@ -100,10 +98,7 @@ p a, article li a, footer a, aside a {
   color:#677D7C;
   padding:0 .05em;
 }
-p a:hover, article li a:hover, footer a:hover, aside a:hover, .annotated ol a:hover {
-  background:#eee;
-  border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
-}
+p a:hover, article li a:hover, footer a:hover, aside a:hover, .annotated ol a:hover { background:#eee; border-radius:6px; }
 blockquote a:hover { background:#dfdfdf }
 
 /* lists */
@@ -129,7 +124,8 @@ nav ul li:before { content:'= ' }
 .vcard .n, .vcard strong { text-shadow:0px 0px 1px #777 }
 .vcard strong { font-weight:normal; }
 .vcard a.email {
-  display: block; width:110px; padding: 0 5px;
+  display: block; width:11
+  0px; padding: 0 5px;
   position: relative; right: 9.2em; bottom: 1.5em; margin-bottom: -1.5em;
 }
 .vcard .photo { float:left; margin:7px 1em 0 0; border:1px solid #777; }
@@ -165,10 +161,7 @@ nav ul li:before { content:'= ' }
     position:relative; right:10.4em;
     text-align:right; width:7em;
   }
-#echoes h1 img {
-  height:24px;
-  box-shadow:0 0 1px #bbb; -moz-box-shadow:0 0 1px #bbb; -webkit-box-shadow:0 0 1px #bbb; -o-box-shadow:0 0 1px #bbb;
-}
+#echoes h1 img { height:24px; box-shadow:0 0 1px #bbb; }
 #echoes li { margin-bottom:1.2em; font-size:.85em }
 .annotated ol { margin-top:-0.2em }
 .annotated ol a {
@@ -180,8 +173,8 @@ nav ul li:before { content:'= ' }
 #echoes q { display:block; line-height:1.5em }
   #echoes #twitter q {
     background:#eee; color:#555;
-    margin-left:-2.6em; padding:.2em .5em .4em 2.6em;
-    border-radius:0 9px 9px 0; -webkit-border-radius:0 9px 9px 0; -moz-border-radius:0 9px 9px 0;
+    margin-left:-40px; padding:.2em .5em .4em 40px;
+    border-radius:0 9px 9px 0;
     text-indent:-0.9em; quotes:none;
   }
   #echoes #twitter q:before { content:'“'; font-size:2em }
