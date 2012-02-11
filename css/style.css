@@ -20,7 +20,7 @@ body {
   body > header { padding-top:1.6em }
     body > header img { float:right }
 
-aside, footer { font-size:1.6em }
+aside, footer { font-size:16px }
 aside { margin-top:3.4em }
 footer {
   margin:7em 0 1em; padding-top:2em;
@@ -186,3 +186,8 @@ nav ul li:before { content:'= ' }
   .vcard a.email { bottom:29px; }
   article header time { top:9px; }
 }
+
+/* post specific */
+.i365 img { display:block; width:475px; margin:15px 0 25px; }
+aside.i365 p { margin-bottom:.5em }
+aside.i365 ul { margin:.5em 4px; }

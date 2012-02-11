@@ -1,0 +1,52 @@
+---
+layout: post
+title: iPhone 365
+---
+
+Yesterday I finished my "iPhone 365":iPhone365 project, a photography project I started 1 year ago. Well-known among photographers, 365 is a project for taking a photo each day for a year. There are no other rules: you choose your photo equipment, subjects you photograph, when to start with it. It allows a lot of space for creativity with a simple goal: to become better at photography.
+
+I decided to make it an iPhone 365 project for 3 simple reasons:
+
+# I "started a 365":56/365 once before that, only to quit it after less than 2 months. I wasn't always eager to carry a bulky SLR with me, and editing photos required way too much time and dedication on a daily basis, to the point where it became a real drag.
+# It's a euphemism to say that I worship my iPhone 4, mostly because of its fabulous camera; it never leaves my side (and needless to say, the best camera is the one that's always with you).
+# There are so many great iPhone apps for taking and editing your photos. I will list the ones I used.
+
+<section class="i365">
+h1. My favourite photo apps
+
+# Built-in camera app. With its irreplaceable HDR setting, it's still my most preferred app for shooting. I used all the other apps only for editing (apart from Hipstamatic).
+<a href="http://www.flickr.com/photos/ivanavasilj/6537189465/in/set-72157626061095120/"><img src="http://farm8.staticflickr.com/7002/6537189465_ff1bce500a_d.jpg" alt="311/365: Splendid"></a>
+# "Camera+":http://campl.us/. Really the ultimate photo app, I used it for 90% of the shots. Not only for its great effects, but it also offers a variety of white balance choices, built-in timer, etc. I could have easily renamed my project to Camera+ 365.
+<a href="http://www.flickr.com/photos/ivanavasilj/6619525409/in/set-72157626061095120/"><img src="http://farm8.staticflickr.com/7016/6619525409_d6e8f27746_z_d.jpg" alt="324/365: A beginning"></a>
+# "Instagram":http://instagr.am/. The most social photo app, fast and with beautiful effects. Everybody knows it, everybody loves it.
+<a href="http://www.flickr.com/photos/ivanavasilj/6465705523/in/set-72157625092360131/"><img src="http://farm8.staticflickr.com/7150/6465705523_ff29e79906_d.jpg" alt="298/365: Pošta"></a>
+# "Hipstamatic":http://hipstamatic.com/the_app.html. The name says it all. I love its look, retro feel, and the random mode. The "most lomo" app, just shoot and don't look back.
+<a href="http://www.flickr.com/photos/ivanavasilj/5658824897/in/set-72157626061095120"><img src="http://farm6.staticflickr.com/5147/5658824897_6d5930961a_d.jpg" alt="74/365: Old and broken"></a>
+# "CrossProcess":http://bananacameraco.com/crossprocess/. Admirably emulated cross processed film, great results.
+<a href="http://www.flickr.com/photos/ivanavasilj/5614488899/in/set-72157628173561053"><img src="http://farm6.staticflickr.com/5143/5614488899_f9a392963b_z_d.jpg" alt="60/365: Unwanted lemonade"></a>
+</section>
+
+<section>
+h1. The experience
+
+The greatest benefit I got from doing this is the community feedback from my Flickr friends, great number of them coming from "The Daily Shoot":dailyshoot project, which unfortunately is no longer active, but it had great daily assignments to keep me motivated, and connect with people who are doing the same thing.
+
+Staying motivated is a real bummer here: I certainly had plenty of days where I would just point to and shoot the first thing I saw ("one example of that":downExample). Having a great idea for a shot for 365 days (and execute it) is hardly likely, so there were plenty of ups &amp; downs. My favourite (and totally unexpected) ups were the "3 of my photos that got explored on Flickr":explored.
+
+We all know that practice makes perfect. What makes 365 a great project is that you can do it even if you never had a camera in your hands. Even if you don't become much better at photography, and you definitely will, you'll have one year of your life in photos, a unique and irreplaceable souvenir worth having.
+</section>
+
+<aside class="i365">
+Related links:
+* "My iPhone 365 project":iPhone365
+* "My Flickr stream":myFlickr
+* "The Daily Shoot assignments":dailyshoot
+</aside>
+
+
+[iPhone365]http://www.flickr.com/photos/ivanavasilj/sets/72157626061095120/
+[myFlickr]http://www.flickr.com/photos/ivanavasilj/
+[56/365]http://www.flickr.com/photos/ivanavasilj/sets/72157624849736463/
+[explored]http://www.flickr.com/photos/ivanavasilj/sets/72157626980783451/detail/
+[dailyshoot]http://dailyshoot.com/assignments
+[downExample]http://www.flickr.com/photos/ivanavasilj/6521979279/in/set-72157626061095120/
