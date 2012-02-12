@@ -181,3 +181,8 @@ nav ul li:before { content:'= ' }
 #echoes #lastfm p { font-size:.85em }
 #echoes #flickr li { display:inline }
 #echoes #flickr li img { border:1px solid #bbb; margin-right:8px }
+
+@media only screen and (max-device-width:480px) {
+  .vcard a.email { bottom:29px; }
+  article header time { top:9px; }
+}
