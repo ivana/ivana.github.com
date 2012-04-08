@@ -127,10 +127,10 @@ nav ul li:before { content:'= ' }
   display: block; width:110px; padding: 0 5px;
   position: relative; right: 9.2em; bottom: 1.5em; margin-bottom: -1.5em;
 }
-.vcard .photo { float:left; margin:7px 1em 0 0; border:1px solid #777; }
+.vcard .photo { float:right; margin:7px 0 30px 22px; border:1px solid #777; }
   /* social links */
-.vcard ol { margin:2em 0 1.5em; padding-left:0 }
-  .vcard ol li { display:inline; padding-left:1em }
+.vcard ol { margin:1.5em 0; padding-left:0 }
+  .vcard ol li { display:inline; padding-left:10px }
   .vcard ol li:first-child { padding-left:0 }
   .vcard ol img { border:3px double #BBB; width:40px }
   .vcard ol a:hover { position:relative; bottom:2px; left:1px; background:none }
