@@ -127,7 +127,7 @@ nav ul li:before { content:'= ' }
   display: block; width:110px; padding: 0 5px;
   position: relative; right: 9.2em; bottom: 1.5em; margin-bottom: -1.5em;
 }
-.vcard .photo { float:right; margin:7px 0 30px 22px; border:1px solid #777; }
+.vcard .photo { float:right; margin:7px 0 30px 30px; border:1px solid #777; width:180px; }
   /* social links */
 .vcard ol { margin:1.5em 0; padding-left:0 }
   .vcard ol li { display:inline; padding-left:10px }
