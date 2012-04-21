@@ -53,11 +53,11 @@ blockquote { padding:1em .5em 0 2.25em }
 img { border:0 none }
 
 time { font-size:0.85em }
-  article header time {
-    display:block;
-    position:relative; right:17em; top:2px;
-    width:200px; text-align:right;
-  }
+article header time {
+  display:block;
+  position:relative; right:17em; top:2px;
+  width:200px; text-align:right;
+}
 
 em { font-style:normal; text-shadow:0 0 1px #333 }
 
@@ -153,21 +153,17 @@ nav ul li:before { content:'= ' }
 #archive a:hover { text-shadow:0 0 3px #777; }
 
 /* echoes */
-#echoes section { clear:left }
-  #echoes > p { margin-top:2.6em }
-  #echoes section h1 {
-    font:inherit;
-    position:relative; right:10.4em;
-    text-align:right; width:7em;
-  }
-#echoes h1 img { height:24px; box-shadow:0 0 1px #bbb; }
-#echoes li { margin-bottom:1.2em; font-size:.85em }
-.annotated ol { margin-top:-0.2em }
-.annotated ol a {
-  display:block; margin-top:-0.1em; line-height:1.2em;
-  text-transform:lowercase; font-size:1.05em;
-  color:#677D7C;
+#echoes > h1 { margin-bottom:.5em }
+#echoes section h1 { font:inherit; }
+#echoes > p { margin-top:2.6em }
+#echoes h1 img {
+  height:24px; box-shadow:0 0 1px #bbb;
+  position: relative; top: 34px; right: 80px;
 }
+#echoes li { margin-bottom:1.2em; font-size:.85em }
+#echoes time { display:block }
+.annotated ol { margin-top:-0.2em }
+.annotated ol a { margin-top:-0.1em; line-height:1.2em; font-size:1.05em; color:#677D7C; }
 .annotated p, .annotated q { margin-top:.2em }
 #echoes q { display:block; line-height:1.5em }
   #echoes #twitter q {
