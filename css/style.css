@@ -136,9 +136,8 @@ nav ul li:before { content:'= ' }
   .vcard ol a:hover { position:relative; bottom:2px; left:1px; background:none }
 
 /* projects */
-#projects > h1 { position:absolute; left:-10000px; }
-#projects h1 { margin-bottom:1em; font-size:1.5em; line-height:1.3; }
 #projects article { margin-bottom:30px; }
+#projects article h1 { margin:2em 0 1em; font-size:1.5em; line-height:1.3; }
 #projects p { margin-bottom:1em; }
 #projects a:active, a:visited { outline:0 none }
 #projects img { border:1px solid #ddd }
