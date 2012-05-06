@@ -12,10 +12,7 @@ body {
   background:snow; color:#222;
 /*  background-image:url('/img/grid-27.png');*/
 }
-  body > * { font-size:1.8em }
-
-  body > header { padding-top:1.6em }
-    body > header img { float:right }
+body > * { font-size:1.8em }
 
 aside, footer { font-size:16px }
 aside { margin-top:3.4em }
@@ -23,47 +20,20 @@ footer {
   margin:7em 0 1em; padding-top:2em;
   font-size:1.6em;
 }
-  footer li { display:inline; padding-right:2em }
-  footer img { padding-right:.15em; height:12px }
+footer li { display:inline; padding-right:2em }
+footer img { padding-right:.15em; height:12px }
+
+em { font-style:normal; text-shadow:0 0 1px #333 }
+img { border:0 none }
 
 p {
   font-size:1em; line-height:1.5em;
   margin-bottom:1.5em;
 }
-  article header + p { margin-top:-1.35em }
-
-code { font:.95em courier, monospace;}
-code, blockquote { color:#555 }
-pre code {
-  display:block;
-  font-size:14px; line-height:18px; white-space:pre-wrap;
-  margin:-1.9em 0 0 -40px; padding:0 1em 0 40px;
-}
-pre code, blockquote { background:#eee; margin-bottom:-0.9em; border-radius:0 9px 9px 0; }
-}
-blockquote { margin:0 0 1em -2.25em }
-blockquote { padding:1em .5em 0 2.25em }
-  blockquote p:first-child:before { content:'“'; font-size:2em }
-  blockquote p:first-child { text-indent:-1.15em }
-  blockquote p:last-child { padding-bottom:1em }
-
-img { border:0 none }
-
-time { font-size:0.85em }
-article header time {
-  display:block;
-  position:relative; right:17em; top:2px;
-  width:200px; text-align:right;
-}
-
-em { font-style:normal; text-shadow:0 0 1px #333 }
 
 /* nav */
 nav { position:relative; right:575px; top:5px; }
-nav li {
-  letter-spacing:.03em; line-height:20px; text-align:right;
-  font-size:12px;
-}
+nav li { text-align:right; font-size:12px; padding-top:2px; }
 nav a { text-decoration:none }
 nav a:hover:before { content:'= ' }
 
@@ -81,14 +51,12 @@ body > article > section h1 { margin:1.5em 0 1em }
 body > article > section > h1 { font-size:22px; }
 body > article > section > section > h1 { font-size:18px }
 
-/* anchors */
+/* links */
 a {
   color:inherit;
   text-decoration:none;
 }
-
 header a:focus, header a:active, header a:visited { outline:0 none }
-
 p a, article li a, footer a, aside a {
   color:#677D7C;
   padding:0 .05em;
@@ -111,7 +79,7 @@ article ul {
   list-style-type:square;
   padding-left:1em;
 }
-  article li { line-height:1.5em }
+article li { line-height:1.5em }
 
 nav ul li:before { content:'= ' }
 
@@ -122,11 +90,11 @@ nav ul li:before { content:'= ' }
   display: block; width:110px; padding: 0 5px;
   position: relative; right: 9.2em; bottom: 1.5em; margin-bottom: -1.5em;
 }
-.vcard .photo { float:right; margin:7px 0 30px 30px; border:1px solid #777; width:180px; }
-  /* social links */
-.vcard ol { margin:1.5em 0; padding-left:0 }
-  .vcard ol li { display:inline; padding-left:10px }
-  .vcard ol li:first-child { padding-left:0 }
+.vcard .photo { float:left; border:1px solid #777; width:180px; }
+.vcard ol { margin:1.5em 0; padding-left:0; list-style-type:none }
+.vcard ol a { font-size:14px; color:inherit; text-transform:lowercase }
+/*  .vcard ol li { display:inline; padding-left:10px }*/
+/*  .vcard ol li:first-child { padding-left:0 }*/
   .vcard ol img { border:3px double #BBB; width:40px }
   .vcard ol a:hover { position:relative; bottom:2px; left:1px; background:none }
 
@@ -150,6 +118,29 @@ nav ul li:before { content:'= ' }
 }
 #archive a:hover { color:#111 }
 
+/* post */
+article header + p { margin-top:-1.35em }
+
+time { font-size:0.85em }
+article header time {
+  display:block;
+  position:relative; right:17em; top:2px;
+  width:200px; text-align:right;
+}
+
+code { font:.95em courier, monospace;}
+code, blockquote { color:#555 }
+pre code, blockquote { background:#eee; border-radius:0 9px 9px 0; }
+pre code {
+  display:block;
+  font-size:14px; line-height:18px; white-space:pre-wrap;
+  margin:-1.9em 0 0 -40px; padding:0 1em 0 40px;
+}
+blockquote { padding:1em .5em 0 2.25em; margin:0 0 1em -2.25em }
+blockquote p:first-child:before { content:'“'; font-size:2em }
+blockquote p:first-child { text-indent:-1.15em }
+blockquote p:last-child { padding-bottom:1em }
+
 /* echoes */
 #echoes > h1 { margin-bottom:.5em }
 #echoes section h1 { font:inherit; }
@@ -159,22 +150,22 @@ nav ul li:before { content:'= ' }
   position: relative; top: 34px; right: 80px;
 }
 #echoes li { margin-bottom:1.2em; font-size:.85em }
-#echoes time { display:block }
+#echoes time { display:block; margin-top:3px; }
 .annotated ol { margin-top:-0.2em }
 .annotated ol a { margin-top:-0.1em; line-height:1.2em; font-size:14px; color:#677D7C; }
 .annotated p, .annotated q { margin-top:.2em }
 #echoes q { display:block; line-height:1.5em }
-  #echoes #twitter q {
-    background:#eee; color:#555;
-    margin-left:-40px; padding:.2em .5em .4em 40px;
-    border-radius:0 9px 9px 0;
-    text-indent:-0.9em; quotes:none;
-  }
-  #echoes #twitter q:before { content:'“'; font-size:2em }
-  #echoes #twitter q:after { content:'' } /* Webkit */
-#echoes #lastfm p { font-size:.85em }
-#echoes #flickr li { display:inline }
-#echoes #flickr li img { border:1px solid #bbb; margin-right:8px }
+#twitter q {
+  background:#eee; color:#555;
+  margin-left:-40px; padding:.2em .5em .4em 40px;
+  border-radius:0 9px 9px 0;
+  text-indent:-0.9em; quotes:none;
+}
+#twitter q:before { content:'“'; font-size:2em }
+#twitter q:after { content:'' } /* Webkit */
+#lastfm p { font-size:.85em }
+#flickr li { display:inline }
+#flickr li img { border:1px solid #bbb; margin-right:8px }
 
 @media only screen and (max-device-width:480px) {
   .vcard a.email { bottom:29px; }
@@ -183,5 +174,6 @@ nav ul li:before { content:'= ' }
 
 /* post specific */
 .i365 img { display:block; width:475px; margin:15px 0 25px; }
+section.i365 { margin-bottom:-2em }
 aside.i365 p { margin-bottom:.5em }
 aside.i365 ul { margin:.5em 4px; }
