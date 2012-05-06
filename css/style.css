@@ -148,8 +148,12 @@ nav ul li:before { content:'= ' }
 /* archive */
 #archive ol { line-height:1.75em; margin-top:-0.3em }
   #archive li { margin-top:.3em }
-#archive a { padding-right:.5em; font-size:20px; }
-#archive a:hover { text-shadow:0 0 3px #777; }
+#archive a {
+  font-size:16px; color:#444;
+  padding-right:.5em;
+  text-shadow:0 0 2px #aaa;
+}
+#archive a:hover { color:#111 }
 
 /* echoes */
 #echoes > h1 { margin-bottom:.5em }
