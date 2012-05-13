@@ -58,12 +58,14 @@ a {
 }
 header a:focus, header a:active, header a:visited { outline:0 none }
 p a, article li a, footer a, aside a, .annotated ol a {
-  color:#677D7C;
-  padding:0 .05em;
+  color:#F72C5F;
+  text-shadow: 1px 1px 1px #ddd;
   border-radius:6px;
 }
-p a:hover, article li a:hover, footer a:hover, aside a:hover, .annotated ol a:hover { background:#eee }
-blockquote a:hover { background:#dfdfdf }
+p a:hover, article li a:hover, footer a:hover, aside a:hover, .annotated ol a:hover {
+  text-decoration:underline;
+  color:#D30E40;
+}
 
 /* lists */
 ul, ol { list-style:none inside }
@@ -100,7 +102,10 @@ article li { line-height:1.5 }
   background:#eee; border:1px solid #e5e5e5;
   margin:1px 0; padding:1px 0;
 }
-.vcard li a:hover { background:#e4e4e4; margin-right:-5px; }
+.vcard li a:hover {
+  background:#e4e4e4; margin-right:-5px;
+  text-decoration:none;
+}
 .vcard li a img {
   border:1px solid #bbb; width:22px;
   vertical-align: text-bottom;
@@ -124,7 +129,7 @@ article li { line-height:1.5 }
   font-size:16px; color:#333;
   text-shadow:0 0 2px #aaa;
 }
-#archive a:hover { color:#000 }
+#archive a:hover { color:#D30E40; }
 #archive time { float:right; padding-top: 2px; }
 
 /* post */
