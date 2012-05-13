@@ -2,7 +2,7 @@ $(function(){
 
   // current page indicator
   var currentPage = window.location.pathname.split('/')[window.location.pathname.split('/').length - 2];
-  var navAnchor = $('nav a[href=/' + currentPage + ']');
+  var navAnchor = $('nav a[href="/' + currentPage + '"]');
   navAnchor.closest('li').html(navAnchor.html() + ' =').prependTo($('body > nav ol'));
 
   // min height determined by screen, not content
