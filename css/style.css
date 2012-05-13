@@ -119,10 +119,9 @@ article li { line-height:1.5 }
 #projects article { margin-bottom:30px; }
 #projects article h1 { margin:1.5em 0 1em }
 #projects p { margin-bottom:1em; }
+#projects h1 a:hover { color:#D30E40;}
 #projects a:active, a:visited { outline:0 none }
 #projects img { border:1px solid #ddd }
-#listas img { float:right; margin:.4em 0 1em 1.5em; }
-#listas p { text-align:justify }
 
 /* archive */
 #archive a {
