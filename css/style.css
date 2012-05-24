@@ -7,45 +7,47 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block }
 
 body {
-  font:62.5% "Theano Didot", didot, "times new roman", times, georgia, serif;
+  font:18px/1.5 "Theano Didot", didot, "times new roman", times, georgia, serif;
   margin:0 auto; width:518px; padding:0 0 10px 40px; border-left:1px solid #ddd;
   background:snow; color:#222;
 /*  background-image:url('/img/grid-27.png');*/
 }
-body > * { font-size:18px }
 
-aside, footer { font-size:16px }
+p { margin-bottom:27px; }
+
+em { font-style:normal; text-shadow:0 0 1px #333 }
+img { border:0 none }
+.bordered { border:1px solid #bbb }
+
 aside { margin-top:54px }
 footer { margin:112px 0 16px; padding-top:32px; }
 footer li { display:inline; padding-right:32px }
 footer img { padding-right:3px; height:12px }
 
-em { font-style:normal; text-shadow:0 0 1px #333 }
-img { border:0 none }
-
-p {
-  font-size:18px; line-height:1.5;
-  margin-bottom:27px;
-}
-
 /* nav */
-body > nav { position:relative; right:575px; top:5px; }
-body > nav li { text-align:right; font-size:12px; padding-top:2px; }
+body > nav { position:relative; right:575px; top:0; }
+body > nav li { text-align:right; padding-top:2px; }
 body > nav a { text-decoration:none }
 body > nav a:hover:before { content:'= ' }
 
 /* headings */
-h1, nav, #archive a, .annotated a {
+nav, .archive a, .annotated a {
+  font-family: geneva, tahoma, helvetica, arial, sans-serif;
+}
+h1 {
   font-family: geneva, tahoma, helvetica, arial, sans-serif; font-weight:normal;
+  text-shadow:0 0 3px #aaa; color:#333;
 }
-h1 { text-shadow:0 0 3px #aaa; color:#333 }
-body > article header h1, body > article > h1, body > section > h1, body > section hgroup h1 {
-  font-size:30px;
-  margin:0 0 33px; padding:3px 0;
+body > article > h1, body > section > h1, body > article > header h1 {
+  font-size:30px; margin:0 0 33px; padding:3px 0;
 }
-body > article > section > h1, body > article > article > h1 { font-size:22px; }
-body > article > section > section > h1 { font-size:18px }
-body > article > section h1 { margin:33px 0 22px }
+body > article > section > h1, body > article > article > h1 {
+  font-size:22px;
+}
+body > article > section > section > h1 {
+  font-size:18px;
+}
+body > article > section h1, body > article > article h1 { margin:33px 0 22px }
 
 /* links */
 a {
@@ -58,7 +60,7 @@ p a, article li a, footer a, aside a, .annotated ol a {
   text-shadow: 1px 1px 1px #ddd;
   border-radius:6px;
 }
-p a:hover, article li a:hover, footer a:hover, aside a:hover, .annotated ol a:hover {
+p a:hover, article li a:hover, footer a:hover, aside a:hover {
   text-decoration:underline;
 }
 
@@ -80,22 +82,21 @@ article ul {
 article li { line-height:1.5 }
 
 /* about */
-.vcard .n, .vcard strong { text-shadow:0px 0px 2px #777 }
+.vcard .n, .vcard strong { text-shadow:0 0 2px #777 }
 .vcard strong { font-weight:normal; }
 .vcard .family-name { display:none }
 .vcard a.email {
-  display: block; width:110px; padding: 0 5px;
+  display: block; width:110px;
   position: relative; right:165px; bottom:27px; margin-bottom:-27px;
 }
-.vcard .photo { float:right; border:1px solid #ddd; height:200px }
+.vcard .photo { float:right; height:200px }
 .vcard ol { margin:27px 0; padding-left:0; list-style-type:none }
-.vcard li { line-height:1 }
+.vcard li { line-height:1.2 }
 .vcard li a {
-  font-size:12px;
   color: #333; text-shadow: 1px 1px 1px #ccc;
-  display: block; height: 24px;
+  display: block; height:26px;
   background:#eee; border:1px solid #e5e5e5;
-  margin:1px 0; padding:1px 0;
+  margin:1px 0;
   text-align:right;
 }
 .vcard li a:hover {
@@ -104,9 +105,9 @@ article li { line-height:1.5 }
   color:#D30E40;
 }
 .vcard li a img {
-  border:1px solid #bbb; width:22px;
+  width:24px;
   float:right;
-  margin: 0 1px 0 10px;
+  margin:1px 1px 0 10px;
 }
 .vcard li a span {
   padding: 5px;
@@ -114,25 +115,18 @@ article li { line-height:1.5 }
 }
 
 /* projects */
-#projects article { margin-bottom:30px; }
-#projects article h1 { margin:27px 0 18px }
-#projects p { margin-bottom:18px; }
-#projects a:active, a:visited { outline:0 none }
-#projects img { border:1px solid #ddd }
+.projects p { margin-bottom:18px; }
+.projects a:active, a:visited { outline:0 none }
 
 /* archive */
-#archive a {
-  font-size:16px; color:#333;
-  text-shadow:0 0 2px #aaa;
-}
-#archive time { float:right; padding-top: 2px; }
+.archive a { color:#333; text-shadow:0 0 2px #aaa; }
+.archive time { float:right; padding-top: 2px; }
 
-#projects h1 a:hover, #archive a:hover { color:#D30E40 }
+.projects a:hover, .archive a:hover { color:#D30E40 }
 
 /* post */
 article header + p { margin-top:-24px }
 
-time { font-size:15px }
 article header time {
   display:block;
   position:relative; right:255px; top:2px;
@@ -144,7 +138,7 @@ code, blockquote { color:#555 }
 pre code, blockquote { background:#eee; border-radius:0 9px 9px 0; }
 pre code {
   display:block;
-  font-size:14px; line-height:18px; white-space:pre-wrap;
+  line-height:18px; white-space:pre-wrap;
   margin:-26px 0 0 -40px; padding:0 14px 0 40px;
 }
 blockquote { padding:18px 9px 0 40px; margin:0 0 18px -40px }
@@ -153,29 +147,36 @@ blockquote p:first-child { text-indent:-20px }
 blockquote p:last-child { padding-bottom:18px }
 
 /* echoes */
-#echoes > h1 { margin-bottom:15px }
-#echoes section h1 { font:inherit; }
-#echoes > p { margin-top:46px }
-#echoes h1 img {
+.echoes article { margin-top:-15px }
+.echoes > p { margin-top:46px }
+.echoes .icon {
   height:24px; box-shadow:0 0 1px #bbb;
-  position: relative; top: 34px; right: 80px;
+  position: relative; top:29px; right: 80px;
 }
-#echoes li { margin-bottom:18px; font-size:15px }
-#echoes time { display:block; margin-top:3px; }
+.echoes article ol { list-style:none inside; padding:0; margin:-27px 0 }
+.echoes li { margin-bottom:18px }
+.echoes time { display:block; margin-top:3px; }
+.echoes q { display:block; line-height:22px }
+
 .annotated ol { margin-top:-3px }
-.annotated ol a { font-size:14px; }
 .annotated p, .annotated q { margin-top:3px }
-#echoes q { display:block; line-height:22px }
-#twitter q {
+
+.twitter a:hover { text-decoration:none }
+.twitter q {
   background:#eee; color:#555;
   margin-left:-40px; padding:3px 7px 6px 40px;
   border-radius:0 9px 9px 0;
   text-indent:-13px; quotes:none;
 }
-#twitter q:before { content:'“'; font-size:30px }
-#twitter q:after { content:'' } /* Webkit */
-#flickr li { display:inline }
-#flickr li img { border:1px solid #bbb; margin-right:8px }
+.twitter q:before { content:'“'; font-size:30px }
+.twitter q:after { content:'' } /* Webkit */
+
+/* abstractions */
+body > nav li, .vcard li a { font-size:12px }
+pre code, .annotated ol a { font-size:14px }
+time, .echoes li { font-size:15px }
+aside, footer, .archive a { font-size:16px }
+
 
 @media only screen and (max-device-width:480px) {
   .vcard a.email { bottom:29px; }
