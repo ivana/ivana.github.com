@@ -8,6 +8,17 @@ $(function(){
   // min height determined by screen, not content
   $('body').css('min-height', screen.availHeight);
 
+  // toggle longer self-description
+  $('.toggledesc').on('click', function(e){
+    $('.toggledesc + div').toggle()
+
+    toggler = $(this).find('a').first()
+    if(toggler.text() == 'show') toggler.text('hide')
+    else toggler.text('show')
+
+    return false
+  })
+
   // echoes
   if(currentPage == 'echoes'){
     $.getJSON('http://pipes.yahoo.com/ivana/echoes?_render=json&_callback=?', function(data){
