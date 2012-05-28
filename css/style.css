@@ -65,21 +65,23 @@ p a:hover, article li a:hover, footer a:hover, aside a:hover {
 }
 
 /* lists */
-ul, ol { list-style:none inside }
+ul, ol { list-style:none inside; padding:0 }
+li { line-height:1.5 }
 
-article ol, article ul {
-  list-style-position:outside;
+.post ol, .post ul, .vcard ol, .vcard ul {
   margin:27px 0;
 }
-article ol {
+.post ol, .post ul {
+  list-style-position:outside;
+}
+.post ol {
   list-style-type:decimal;
   padding-left:24px;
 }
-article ul {
+.post ul {
   list-style-type:square;
   padding-left:18px;
 }
-article li { line-height:1.5 }
 
 /* about */
 .vcard .n, .vcard strong { text-shadow:0 0 2px #777 }
@@ -90,8 +92,6 @@ article li { line-height:1.5 }
   position: relative; right:165px; bottom:27px; margin-bottom:-27px;
 }
 .vcard .photo { float:right; height:200px }
-.vcard ol { margin:27px 0; padding-left:0; list-style-type:none }
-.vcard li { line-height:1.2 }
 .vcard li a {
   color: #333; text-shadow: 1px 1px 1px #ccc;
   display: block; height:26px;
@@ -153,12 +153,12 @@ blockquote p:last-child { padding-bottom:18px }
   height:24px; box-shadow:0 0 1px #bbb;
   position: relative; top:29px; right: 80px;
 }
-.echoes article ol { list-style:none inside; padding:0; margin:-27px 0 }
+.echoes ol { margin:-27px 0 }
 .echoes li { margin-bottom:18px }
 .echoes time { display:block; margin-top:3px; }
 .echoes q { display:block; line-height:22px }
 
-.annotated ol { margin-top:-3px }
+.annotated ol { margin-top:-30px }
 .annotated p, .annotated q { margin-top:3px }
 
 .twitter a:hover { text-decoration:none }
