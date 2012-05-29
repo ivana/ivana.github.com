@@ -9,7 +9,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   font:18px/1.5 "Theano Didot", didot, "times new roman", times, georgia, serif;
   margin:0 auto; width:518px; padding:0 0 10px 40px; border-left:1px solid #ddd;
-  background:snow; color:#222;
+  background:snow; color:#444;
 /*  background-image:url('/img/grid-27.png');*/
 }
 
@@ -83,7 +83,7 @@ li { line-height:1.5 }
 }
 
 /* about */
-.vcard .n { text-shadow:0 0 2px #777 }
+.vcard .n { text-shadow:0 0 1px #888 }
 .vcard strong { font-weight:normal; }
 .vcard .family-name { display:none }
 .vcard a.email {
