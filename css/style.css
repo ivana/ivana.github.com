@@ -83,7 +83,7 @@ li { line-height:1.5 }
 }
 
 /* about */
-.vcard .n { text-shadow:0 0 1px #888 }
+.vcard .n, .vcard strong { text-shadow:0 0 1px #888 }
 .vcard strong { font-weight:normal; }
 .vcard .family-name { display:none }
 .vcard a.email {
