@@ -65,7 +65,7 @@ p a, article li a, footer a, aside a, .annotated ol a, .outsite a {
   color:#D30E40;
   text-shadow: 1px 1px 1px #e2e2e2;
 }
-p a:hover, article li a:hover, footer a:hover, aside a:hover {
+p a:hover, article li a:hover, footer a:hover, aside a:hover, .outsite a:hover {
   text-decoration:underline;
 }
 
@@ -187,15 +187,20 @@ blockquote p:last-child { padding-bottom:18px }
 /* abstractions */
 .insite, .outsite, .vcard li a, .tags small { font-size:12px }
 pre code, .annotated ol a, .tags { font-size:14px }
-time, .echoes li, .tags strong { font-size:15px }
-aside, footer, .archive a { font-size:16px }
+time, small, .echoes li, .tags strong, aside { font-size:15px }
+footer, .archive a { font-size:16px }
 
 .flickr li img, .outsite { width:518px }
 
 
 @media only screen and (max-device-width:480px) {
   article header time { top:9px; }
-  .vcard .email { bottom:29px; }
+  footer li { padding-left:100px }
+  .outsite img { height:14px }
+
+  .tags small { font-size:8px }
+  .tags { font-size:9px }
+  .tags strong { font-size:10px }
 }
 
 /* post specific */
