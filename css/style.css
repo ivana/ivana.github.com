@@ -21,14 +21,20 @@ img { border:0 none }
 
 aside { margin-top:54px }
 footer { margin:112px 0 16px; padding-top:32px; }
-footer li { display:inline; padding-right:32px }
-footer img { padding-right:3px; height:12px }
+footer li { display:inline; padding-left:140px }
+footer li:first-child { padding-left:0 }
 
 /* nav */
-body > nav { position:relative; right:575px; top:0; }
-body > nav li { text-align:right; padding-top:2px; }
-body > nav a { text-decoration:none }
-body > nav a:hover:before { content:'= ' }
+.insite { position:relative; right:575px; top:0; }
+.insite li { text-align:right; padding-top:2px; }
+.insite a { text-decoration:none }
+.insite a:hover:before { content:'= ' }
+.outsite {
+  position:absolute; top:2px;
+  text-align:right;
+}
+.outsite li { display:inline; margin-left:16px; }
+.outsite img { padding-right:3px; height:10px }
 
 /* headings */
 nav, .archive a, .annotated a, .tags {
@@ -55,9 +61,9 @@ a {
   text-decoration:none;
 }
 header a:focus, header a:active, header a:visited { outline:0 none }
-p a, article li a, footer a, aside a, .annotated ol a {
+p a, article li a, footer a, aside a, .annotated ol a, .outsite a {
   color:#D30E40;
-  text-shadow: 1px 1px 1px #ddd;
+  text-shadow: 1px 1px 1px #e2e2e2;
 }
 p a:hover, article li a:hover, footer a:hover, aside a:hover {
   text-decoration:underline;
@@ -86,10 +92,6 @@ li { line-height:1.5 }
 .vcard .n { text-shadow:0 0 1px #888 }
 .vcard strong { font-weight:normal; }
 .vcard .family-name { display:none }
-.vcard a.email {
-  display: block; width:110px;
-  position: relative; right:165px; bottom:27px; margin-bottom:-27px;
-}
 .vcard .photo { float:left; height:200px }
 .vcard li a {
   color: #333; background:#e7e7e7;
@@ -182,17 +184,18 @@ blockquote p:last-child { padding-bottom:18px }
 }
 .twitter q:before { content:'“'; font-size:30px }
 .twitter q:after { content:'' } /* Webkit */
-
 /* abstractions */
-body > nav li, .vcard li a, .tags small { font-size:12px }
+.insite, .outsite, .vcard li a, .tags small { font-size:12px }
 pre code, .annotated ol a, .tags { font-size:14px }
 time, .echoes li, .tags strong { font-size:15px }
 aside, footer, .archive a { font-size:16px }
 
+.flickr li img, .outsite { width:518px }
+
 
 @media only screen and (max-device-width:480px) {
-  .vcard a.email { bottom:29px; }
   article header time { top:9px; }
+  .vcard .email { bottom:29px; }
 }
 
 /* post specific */

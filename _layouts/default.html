@@ -26,7 +26,7 @@
 
   <body>
 
-    <nav>
+    <nav class="insite">
       <ol>
         <li><a href="/">home</a></li>
         <li><a href="/blog">blog</a></li>
@@ -35,14 +35,20 @@
       </ol>
     </nav>
 
+    <nav class="outsite">
+      <ol>
+        <li><img src="/img/icons/bw/feed.png" alt="" /><a href="http://feeds.feedburner.com/ivanavasilj">feed</a></li>
+        <li><a href="mailto:dev@ivana.im">contact me</a></li>
+      </ol>
+    </nav>
+
     {{ content }}
 
     <footer>
       <ol>
-        <li><a href="/">home</a></li>
         <li><a href="/archive">blog archive</a></li>
+        <li><a href="/">home</a></li>
         <li><a href="http://twitter.com/ivanavasilj">@ivanavasilj</a></li>
-        <li><img src="/img/icons/bw/feed.png" alt="" /><a href="http://feeds.feedburner.com/ivanavasilj">feed</a></li>
       </ol>
     </footer>
 
