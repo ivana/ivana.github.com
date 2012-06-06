@@ -1,7 +1,8 @@
 $(function(){
 
-  // current page indicator
   var currentPage = window.location.pathname.split('/')[window.location.pathname.split('/').length - 2];
+
+  // current page indicator
   var navAnchor = $('nav a[href="/' + currentPage + '"]');
   navAnchor.closest('li').html(navAnchor.html() + ' =');
 
@@ -21,7 +22,7 @@ $(function(){
 
   // echoes
   if(currentPage == 'echoes'){
-    $.getJSON('http://pipes.yahoo.com/ivana/echoes?_render=json&_callback=?', function(data){
+    $.getJSON('http://pipes.yahoo.com/ivasilj/echoes?_render=json&_callback=?', function(data){
       
       $.each(data.value.items, function(i, item){
         switch(item.src){
