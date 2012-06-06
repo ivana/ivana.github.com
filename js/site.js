@@ -44,9 +44,9 @@ $(function(){
         
           case 'flickr':
           /* find something like http://farm3.static.flickr.com/2182/5785913956_007e54dc7c_m.jpg,
-            turn it to http:\/\/farm3.static.flickr.com\/2182\/5785913956_007e54dc7c_m_d.jpg
-            because I want the Medium 500 size of the photo from Flickr */
-            var imgsrc = item.content.content.match(/http:\/\/farm.+.jpg/)[0].replace('_m.jpg', '_d.jpg');
+            turn it to http:\/\/farm3.static.flickr.com\/2182\/5785913956_007e54dc7c_z_d.jpg
+            because I want the Medium 640 size of the photo from Flickr */
+            var imgsrc = item.content.content.match(/http:\/\/farm.+.jpg/)[0].replace('_m.jpg', '_z_d.jpg');
             var anchor = '<a href="' + item.link + '"><img class="bordered" src="' + imgsrc + '" alt="' + item.title + '"></a>';
 
             $('#flickr ol').append('<li>' + anchor + '</li>');
