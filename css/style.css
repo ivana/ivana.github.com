@@ -99,7 +99,7 @@ li { line-height:1.5 }
   margin:1px 0;
 }
 .vcard li a, .tags li {
-  text-shadow: 1px 1px 1px #ccc;
+  text-shadow: 1px 1px 1px #ddd;
   border:1px solid #d9d9d9;
   border-radius:6px;
 }
