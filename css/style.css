@@ -19,7 +19,7 @@ em { font-style:normal; text-shadow:0 0 1px #333 }
 img { border:0 none }
 .bordered { border:1px solid #bbb }
 
-aside { margin-top:54px }
+aside { margin-top:36px }
 footer { margin:112px 0 16px; padding-top:32px; }
 footer li { display:inline; padding-left:140px }
 footer li:first-child { padding-left:0 }
@@ -117,6 +117,7 @@ li { line-height:1.5 }
   padding: 5px;
   display: block;
 }
+.vcard aside { border-top: 1px dashed #DDD; padding-top: 54px; }
 
 .tags { line-height:2; color: #9999A4; }
 .tags li {

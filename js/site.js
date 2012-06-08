@@ -12,11 +12,6 @@ $(function(){
   // toggle longer self-description
   $('.toggledesc').on('click', function(e){
     $('.toggledesc + div').toggle()
-
-    toggler = $(this).find('a').first()
-    if(toggler.text() == 'show') toggler.text('hide')
-    else toggler.text('show')
-
     return false
   })
 
