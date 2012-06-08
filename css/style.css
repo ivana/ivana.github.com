@@ -34,7 +34,10 @@ footer li:first-child { padding-left:0 }
   text-align:right;
 }
 .outsite li { display:inline; margin-left:16px; }
-.outsite img { padding-right:3px; height:10px }
+.outsite img {
+  padding-right:3px; height:10px;
+  position: relative; top: 1px;
+}
 
 /* headings */
 nav, .archive a, .annotated a, .tags {
