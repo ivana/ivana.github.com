@@ -52,6 +52,21 @@ $(function(){
     })
   }
 
+  // photography
+  if(currentPage == 'photography'){
+    $.getJSON('http://pipes.yahoo.com/ivasilj/flickr_publish?_render=json&_callback=?', function(data){
+
+      $.each(data.value.items, function(i, item){
+        var title = '<h1>' + item.title + '</h1>'
+        var imgsrc = item.content.content.match(/http:\/\/farm.+.jpg/)[0].replace('_m.jpg', '_z_d.jpg')
+        var photo = '<a href="' + item.link + '"><img src="' + imgsrc + '" alt="' + item.title + '"></a>'
+
+        $('#photography').append('<article>' + photo + title + '</article>')
+      })
+
+    })
+  }
+
   DateUtil = {
     myDateFormat: function(date){
       return this.monthName[date.getMonth()] + ' ' + date.getDate() + ', ' + date.getFullYear()

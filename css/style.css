@@ -25,22 +25,22 @@ footer li { display:inline; padding-left:140px }
 footer li:first-child { padding-left:0 }
 
 /* nav */
-.insite { position:relative; right:575px; top:0; }
-.insite li { text-align:right; padding-top:2px; }
+.insite { position:relative; right:575px; top:2px; }
+.insite li { text-align:right; line-height:18px }
 .insite a { text-decoration:none }
 .insite a:hover:before { content:'= ' }
 .outsite {
   position:absolute; top:2px;
   text-align:right;
 }
-.outsite li { display:inline; margin-left:16px; }
+.outsite li { display:inline; margin-left:18px; }
 .outsite img {
   padding-right:3px; height:10px;
   position: relative; top: 1px;
 }
 
 /* headings */
-nav, .archive a, .annotated a, .tags {
+nav, .archive a, .annotated a, .tags, .photography {
   font-family: geneva, tahoma, helvetica, arial, sans-serif;
 }
 h1 {
@@ -49,7 +49,7 @@ h1 {
 }
 body > h1 { display:none }
 body > article > h1, body > section > h1, body > article > header h1 {
-  font-size:30px; margin:0 0 33px; padding:3px 0;
+  font-size:30px; margin:-5px 0 40px;
 }
 body > article > section > h1, body > article > article > h1 {
   font-size:22px;
@@ -65,11 +65,11 @@ a {
   text-decoration:none;
 }
 header a:focus, header a:active, header a:visited { outline:0 none }
-p a, article li a, footer a, aside a, .annotated ol a, .outsite a {
+p a, article li a, footer a, aside a, .annotated ol a {
   color:#D30E40;
   text-shadow: 1px 1px 1px #e2e2e2;
 }
-p a:hover, article li a:hover, footer a:hover, aside a:hover, .outsite a:hover {
+p a:hover, article li a:hover, footer a:hover, aside a:hover, .outsite a:hover, .photography a:hover {
   text-decoration:underline;
 }
 
@@ -189,13 +189,26 @@ blockquote p:last-child { padding-bottom:18px }
 }
 .twitter q:before { content:'“'; font-size:30px }
 .twitter q:after { content:'' } /* Webkit */
+
+/* photography */
+.photography {}
+.photography ol { margin: -18px 0 40px; text-align: right; }
+.photography ol img { width: 20px; vertical-align: bottom; }
+.photography li { display:inline; margin-left:20px }
+
+.photography article { margin-bottom:60px; }
+.photography h1 {
+  font-size: 18px; font-variant: small-caps; text-transform: lowercase; letter-spacing: 2px; text-align:right;
+  color: #444; text-shadow: 0 0 1px #CCC;
+}
+
 /* abstractions */
-.insite, .outsite, .vcard li a, .tags small { font-size:12px }
+.insite, .outsite, .vcard li a, .tags small, .photography ol { font-size:12px }
 pre code, .annotated ol a, .tags { font-size:14px }
 time, small, .echoes li, .tags strong, aside { font-size:15px }
 footer, .archive a { font-size:16px }
 
-.flickr li img, .outsite { width:518px }
+.flickr li img, .photography article img, .outsite { width:518px }
 
 
 @media only screen and (max-device-width:480px) {
