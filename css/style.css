@@ -193,12 +193,13 @@ blockquote p:last-child { padding-bottom:18px }
 
 /* photography */
 .photography {}
-.photography ol { margin: -18px 0 40px; text-align: right; }
+.photography > h1 { float:left; margin-bottom:54px; }
+.photography ol { padding-top:12px; text-align: right; }
 .photography ol img { width: 20px; vertical-align: bottom; }
 .photography li { display:inline; margin-left:20px }
 
-.photography article { margin-bottom:60px; }
-.photography h1 {
+.photography article { margin-bottom:50px; }
+.photography article h1 {
   font-size: 18px; font-variant: small-caps; text-transform: lowercase; letter-spacing: 2px; text-align:right;
   color: #444; text-shadow: 0 0 1px #CCC;
 }
