@@ -9,12 +9,6 @@ $(function(){
   // min height determined by screen, not content
   $('body').css('min-height', screen.availHeight)
 
-  // toggle longer self-description
-  $('.toggledesc').on('click', function(e){
-    $('.toggledesc + div').toggle()
-    return false
-  })
-
   // echoes
   if(currentPage == 'echoes'){
     $.getJSON('http://pipes.yahoo.com/ivasilj/echoes?_render=json&_callback=?', function(data){

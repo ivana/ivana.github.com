@@ -121,7 +121,6 @@ li { line-height:1.5 }
   padding: 5px;
   display: block;
 }
-.vcard aside { border-top: 1px dashed #DDD; padding-top: 54px; }
 
 .tags { line-height:2; color: #9999A4; }
 .tags li {
@@ -130,8 +129,10 @@ li { line-height:1.5 }
   padding:3px 5px 2px;
   border-color:#eee;
 }
-
-.toggledesc + div { display:none; }
+.more {
+  border-width: 1px 0; border-style:dashed; border-color: #DDD;
+  padding-top:27px; margin:36px 0 54px;
+}
 
 /* projects */
 .projects p { margin-bottom:18px; }
