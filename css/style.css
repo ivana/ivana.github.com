@@ -194,9 +194,9 @@ blockquote p:last-child { padding-bottom:18px }
 /* photography */
 .photography {}
 .photography > h1 { float:left; margin-bottom:54px; }
-.photography ol { padding-top:12px; text-align: right; }
-.photography ol img { width: 20px; vertical-align: bottom; }
-.photography li { display:inline; margin-left:20px }
+.photography ol { padding-top:8px; text-align: right; }
+.photography ol img { width: 20px; }
+.photography li { display:inline; margin-left:6px }
 
 .photography article { margin-bottom:50px; }
 .photography article h1 {
