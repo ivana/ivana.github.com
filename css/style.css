@@ -27,8 +27,6 @@ footer li:first-child { padding-left:0 }
 /* nav */
 .insite { position:relative; right:575px; top:2px; }
 .insite li { text-align:right; line-height:18px }
-.insite a { text-decoration:none }
-.insite a:hover:before { content:'= ' }
 .outsite {
   position:absolute; top:2px;
   text-align:right;
@@ -64,14 +62,16 @@ a {
   color:inherit;
   text-decoration:none;
 }
+a:hover { text-decoration:underline; }
+h1 a:hover, h2 a:hover, .archive a:hover, .current a:hover { text-decoration:none }
+
 header a:focus, header a:active, header a:visited { outline:0 none }
-p a, article li a, footer a, aside a, .annotated ol a {
+
+p a, article li a, aside a, .annotated ol a {
   color:#D30E40;
   text-shadow: 1px 1px 1px #e2e2e2;
 }
-p a:hover, article li a:hover, footer a:hover, aside a:hover, .outsite a:hover, .photography a:hover {
-  text-decoration:underline;
-}
+.current a { text-transform:uppercase; }
 
 /* lists */
 ul, ol { list-style:none inside; padding:0 }
@@ -113,7 +113,7 @@ li { line-height:1.5 }
 .vcard li a img {
   width:24px;
   float:left;
-  margin: 1px 8px 0 4px;
+  margin:1px 12px 0 8px;
 }
 .vcard li a span {
   padding: 5px;
@@ -138,7 +138,8 @@ li { line-height:1.5 }
 .projects a:active, a:visited { outline:0 none }
 
 /* archive */
-.archive a { color:#333; text-shadow:0 0 2px #aaa; }
+.archive li { border-bottom:1px dashed #ddd; padding: .5em 0; }
+.archive a { color:#333; text-shadow:0 0 1px #ddd; }
 .archive time { float:right; padding-top: 2px; }
 
 .projects a:hover, .archive a:hover { color:#D30E40 }
@@ -226,4 +227,4 @@ footer, .archive a { font-size:16px }
 .i365 img { display:block; width:475px; margin:15px 0 25px; }
 section.i365 { margin-bottom:-36px }
 aside.i365 p { margin-bottom:9px }
-aside.i365 ul { margin:8px 4px; }
+aside.i365 ul { margin-top:8px }

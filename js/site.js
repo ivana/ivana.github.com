@@ -4,7 +4,7 @@ $(function(){
 
   // current page indicator
   var navAnchor = $('nav a[href="/' + currentPage + '"]')
-  navAnchor.closest('li').html(navAnchor.html() + ' =')
+  navAnchor.closest('li').addClass('current')
 
   // min height determined by screen, not content
   $('body').css('min-height', screen.availHeight)
