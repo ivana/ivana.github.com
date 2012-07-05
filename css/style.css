@@ -12,30 +12,18 @@ body {
   background:snow; color:#444;
 /*  background-image:url('/img/grid-27.png');*/
 }
+body > article, body > section { margin-top:44px }
 
 p { margin-bottom:27px; }
 
 em { font-style:normal; text-shadow:0 0 1px #333 }
 img { border:0 none }
-.bordered { border:1px solid #bbb }
+.bordered { border:1px solid #ddd }
 
 aside { margin-top:36px }
 footer { margin:112px 0 16px; padding-top:32px; }
 footer li { display:inline; padding-left:140px }
 footer li:first-child { padding-left:0 }
-
-/* nav */
-.insite { position:relative; right:575px; top:2px; }
-.insite li { text-align:right; line-height:18px }
-.outsite {
-  position:absolute; top:2px;
-  text-align:right;
-}
-.outsite li { display:inline; margin-left:18px; }
-.outsite img {
-  padding-right:3px; height:10px;
-  position: relative; top: 1px;
-}
 
 /* headings */
 nav, .archive a, .annotated a, .tags, .photography {
@@ -47,7 +35,7 @@ h1 {
 }
 body > h1 { display:none }
 body > article > h1, body > section > h1, body > article > header h1 {
-  font-size:30px; margin:-5px 0 40px;
+  font-size:30px; margin:-5px 0 40px; letter-spacing:1px;
 }
 body > article > section > h1, body > article > article > h1 {
   font-size:22px;
@@ -57,21 +45,32 @@ body > article > section > section > h1 {
 }
 body > article > section h1, body > article > article h1 { margin:33px 0 22px }
 
+/* nav */
+nav a { color:#555 }
+.insite img, .contact img { height:12px; padding-left: 3px; position:relative; top:1px }
+.insite { padding-top: 10px; }
+.insite li { display: inline-block; padding-right:47px; }
+.insite li:last-child { padding-right:0; }
+.current span { padding-bottom: 5px; border-bottom: 1px solid #ddd; text-shadow:0 0 1px #ddd }
+.contact {
+  text-align: right;
+  position: relative; right: 570px; top:-18px;
+}
+
 /* links */
 a {
   color:inherit;
   text-decoration:none;
 }
 a:hover { text-decoration:underline; }
-h1 a:hover, h2 a:hover, .archive a:hover, .current a:hover { text-decoration:none }
+h1 a:hover, h2 a:hover, .archive a:hover, nav a:hover { text-decoration:none }
 
 header a:focus, header a:active, header a:visited { outline:0 none }
 
-p a, article li a, aside a, .annotated ol a {
+p a, article li a, aside a, .annotated ol a, .vcard li a:hover, .insite a:hover {
   color:#D30E40;
-  text-shadow: 1px 1px 1px #e2e2e2;
+  text-shadow: 1px 1px 1px #e5e5e5;
 }
-.current a { text-transform:uppercase; }
 
 /* lists */
 ul, ol { list-style:none inside; padding:0 }
@@ -93,7 +92,6 @@ li { line-height:1.5 }
 }
 
 /* about */
-.vcard h1 { letter-spacing:1px; }
 .vcard .photo { float:left; height:200px }
 .vcard li a {
   color: #333; background:#e7e7e7;
@@ -107,8 +105,6 @@ li { line-height:1.5 }
 }
 .vcard li a:hover {
   background:#f5f5f2; margin-right:-5px;
-  text-decoration:none;
-  color:#D30E40;
 }
 .vcard li a img {
   width:24px;
@@ -205,18 +201,18 @@ blockquote p:last-child { padding-bottom:18px }
 }
 
 /* abstractions */
-.insite, .outsite, .vcard li a, .tags small, .photography ol { font-size:12px }
+.insite, .contact, .vcard li a, .tags small, .photography ol { font-size:12px }
 pre code, .annotated ol a, .tags { font-size:14px }
 time, small, .echoes li, .tags strong, aside, .more { font-size:15px }
 footer, .archive a { font-size:16px }
 
-.flickr li img, .photography article img, .outsite { width:518px }
+.flickr li img, .photography article img { width:518px }
 
 
 @media only screen and (max-device-width:480px) {
   article header time { top:9px; }
   footer li { padding-left:100px }
-  .outsite img { height:14px }
+  .contact img { height:14px }
 
   .tags small { font-size:8px }
   .tags { font-size:9px }
