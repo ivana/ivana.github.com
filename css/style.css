@@ -7,35 +7,37 @@
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block }
 
 body {
-  font:18px/1.5 "Theano Didot", didot, "times new roman", times, georgia, serif;
+  font:16px/1.5 "Theano Didot", "times new roman", times, georgia, serif;
   margin:0 auto; width:518px; padding:0 0 10px 40px; border-left:1px dashed #ddd;
   background:snow; color:#444;
-/*  background-image:url('/img/grid-27.png');*/
+  /*background: url('http://www.baselineme.com/24') center top repeat;*/
 }
-body > article, body > section { margin-top:44px }
+body > article, body > section { margin-top:40px }
 
-p { margin-bottom:27px; }
+h1, nav, .archive a, .annotated a, .tags, .photography, footer {
+  font-family: geneva, tahoma, helvetica, arial, sans-serif;
+}
+
+p { margin-bottom:1.5em; }
 
 em { font-style:normal; text-shadow:0 0 1px #333 }
 img { border:0 none }
 .bordered { border:1px solid #ddd }
 
-aside { margin-top:36px }
-footer { margin:112px 0 16px; padding-top:32px; }
-footer li { display:inline; padding-left:140px }
+aside, .more { padding-top:1.5em; border-top:1px dashed #ddd }
+aside { margin-top:5em }
+footer { margin:8em 0 1em; padding-top:2em; }
+footer li { display:inline; padding-left:168px }
 footer li:first-child { padding-left:0 }
 
 /* headings */
-nav, .archive a, .annotated a, .tags, .photography {
-  font-family: geneva, tahoma, helvetica, arial, sans-serif;
-}
 h1 {
-  font-family: geneva, tahoma, helvetica, arial, sans-serif; font-weight:normal;
-  text-shadow:0 0 2px #aaa; color:#333;
+  font-weight:normal;
+  color:#333;
 }
 body > h1 { display:none }
 body > article > h1, body > section > h1, body > article > header h1 {
-  font-size:30px; margin:-5px 0 40px; letter-spacing:1px;
+  font-size:30px; margin-bottom:43px; letter-spacing:1px;
 }
 body > article > section > h1, body > article > article > h1 {
   font-size:22px;
@@ -43,33 +45,26 @@ body > article > section > h1, body > article > article > h1 {
 body > article > section > section > h1 {
   font-size:18px;
 }
-body > article > section h1, body > article > article h1 { margin:33px 0 22px }
+body > article > section h1, body > article > article h1 { margin:2em 0 1.5em }
+
+/* links */
+a { color:#D30E40; text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+nav a, footer a, h1 a, h2 a { color:inherit; }
+nav a:hover, footer a:hover, .projects a:hover, .archive a:hover { color:#D30E40 }
+h1 a:hover, h2 a:hover, .archive a:hover, nav a:hover, footer a:hover { text-decoration:none }
+header a:focus, header a:active, header a:visited { outline:0 none }
 
 /* nav */
-nav a { color:#555 }
 .insite img, .contact img { height:12px; padding-left: 3px; position:relative; top:1px }
 .insite { padding-top: 10px; }
 .insite li { display: inline-block; padding-right:47px; }
 .insite li:last-child { padding-right:0; }
-.current span { padding-bottom: 5px; border-bottom: 1px solid #ddd; text-shadow:0 0 1px #ddd }
+.current span { padding-bottom: 5px; border-bottom: 1px solid #ddd; }
 .contact {
   text-align: right;
   position: relative; right: 570px; top:-18px;
-}
-
-/* links */
-a {
-  color:inherit;
-  text-decoration:none;
-}
-a:hover { text-decoration:underline; }
-h1 a:hover, h2 a:hover, .archive a:hover, nav a:hover { text-decoration:none }
-
-header a:focus, header a:active, header a:visited { outline:0 none }
-
-p a, article li a, aside a, .annotated ol a, .vcard li a:hover, .insite a:hover {
-  color:#D30E40;
-  text-shadow: 1px 1px 1px #e5e5e5;
 }
 
 /* lists */
@@ -77,7 +72,7 @@ ul, ol { list-style:none inside; padding:0 }
 li { line-height:1.5 }
 
 .post ol, .post ul, .vcard ol, .vcard ul {
-  margin:27px 0;
+  margin:1.5em 0;
 }
 .post ol, .post ul {
   list-style-position:outside;
@@ -98,14 +93,8 @@ li { line-height:1.5 }
   display: block; height:26px;
   margin:1px 0;
 }
-.vcard li a, .tags li {
-  text-shadow: 1px 1px 1px #ddd;
-  border:1px solid #d9d9d9;
-  border-radius:6px;
-}
-.vcard li a:hover {
-  background:#f5f5f2; margin-right:-5px;
-}
+.vcard li a, .tags li { border:1px solid #d9d9d9; border-radius:6px; }
+.vcard li a:hover { background:#f5f5f2; margin-right:-5px; }
 .vcard li a img {
   width:24px;
   float:left;
@@ -116,7 +105,7 @@ li { line-height:1.5 }
   display: block;
 }
 
-.tags { line-height:2; color: #9999A4; }
+.tags { line-height:2; color: #9999A4 }
 .tags strong { font-weight:normal; }
 .tags li {
   display:inline;
@@ -124,52 +113,49 @@ li { line-height:1.5 }
   padding:3px 5px 2px;
   border-color:#eee;
 }
-.more {
-  border-width: 1px 0; border-style:dashed; border-color: #DDD;
-  padding:27px 0; margin:36px 0 54px;
-}
+.tags + p { margin:2em 0 }
+.more { margin-top:1.5em }
 
 /* projects */
-.projects p { margin-bottom:18px; }
+.projects p { margin-bottom:1em; }
 .projects a:active, a:visited { outline:0 none }
 
 /* archive */
-.archive li { border-bottom:1px dashed #ddd; padding: .5em 0; }
-.archive a { color:#333; text-shadow:0 0 1px #ddd; }
+.archive ol { margin-top:-1em; }
+.archive li { border-bottom:1px dashed #ddd; padding:1em 0; }
+.archive a { color:#333; font-size:16px }
 .archive time { float:right; padding-top: 2px; }
 
-.projects a:hover, .archive a:hover { color:#D30E40 }
-
 /* post */
-article header + p { margin-top:-24px }
+article header + p { margin-top:-1.5em }
 
 article header time {
   display:block;
-  position:relative; right:255px; top:2px;
+  position:relative; right:255px;
   width:200px; text-align:right;
 }
 
-code { font:17px courier, monospace;}
+code { font:15px courier, monospace;}
 code, blockquote { color:#555 }
 pre code, blockquote { background:#eee; border-radius:0 9px 9px 0; }
 pre code {
   display:block;
   line-height:18px; white-space:pre-wrap;
-  margin:-26px 0 0 -40px; padding:0 14px 0 40px;
+  margin:-1.5em 0 -1.5em -40px; padding:0 1em 0 40px;
 }
-blockquote { padding:18px 9px 0 40px; margin:0 0 18px -40px }
+blockquote { padding:0 9px 0 40px; margin:0 0 18px -40px }
 blockquote p:first-child:before { content:'“'; font-size:36px }
 blockquote p:first-child { text-indent:-20px }
 blockquote p:last-child { padding-bottom:18px }
 
 /* echoes */
-.echoes article { margin-top:-15px }
+.echoes article { margin-top:-2em }
 .echoes > p { margin-top:46px }
 .echoes .icon {
   height:24px; box-shadow:0 0 1px #bbb;
-  position: relative; top:29px; right: 80px;
+  position: relative; top:43px; right: 80px;
 }
-.echoes ol { margin:-27px 0 }
+.echoes ol { margin:-1.5em 0 }
 .echoes li { margin-bottom:18px }
 .echoes time { display:block; margin-top:3px; }
 .echoes q { display:block; line-height:22px }
@@ -197,16 +183,20 @@ blockquote p:last-child { padding-bottom:18px }
 .photography article { margin-bottom:50px; }
 .photography article h1 {
   font-size: 18px; font-variant: small-caps; text-transform: lowercase; letter-spacing: 2px; text-align:right;
-  color: #444; text-shadow: 0 0 1px #CCC;
+  color: #444;
 }
 
 /* abstractions */
-.insite, .contact, .vcard li a, .tags small, .photography ol { font-size:12px }
+.insite, .contact, .vcard li a, .tags small, .photography ol, footer { font-size:12px }
 pre code, .annotated ol a, .tags { font-size:14px }
-time, small, .echoes li, .tags strong, aside, .more { font-size:15px }
-footer, .archive a { font-size:16px }
+/*time, small, .echoes li, .tags strong, aside, .more { font-size:15px }*/
 
 .flickr li img, .photography article img { width:518px }
+h1, a, .tags li { text-shadow: 1px 1px 1px #e4e4e4; }
+
+/* post specific */
+.i365 img { display:block; width:475px; margin:15px 0 25px; }
+section.i365 { margin-bottom:-2em }
 
 
 @media only screen and (max-device-width:480px) {
@@ -218,9 +208,3 @@ footer, .archive a { font-size:16px }
   .tags { font-size:9px }
   .tags strong { font-size:10px }
 }
-
-/* post specific */
-.i365 img { display:block; width:475px; margin:15px 0 25px; }
-section.i365 { margin-bottom:-36px }
-aside.i365 p { margin-bottom:9px }
-aside.i365 ul { margin-top:8px }
