@@ -121,7 +121,7 @@ li { line-height:1.5 }
 .archive ol { margin-top:-1em; }
 .archive li { border-bottom:1px dashed #ddd; padding:1em 0; }
 .archive a { color:#333; font-size:16px }
-.archive time { float:right; padding-top: 2px; }
+.archive time { float:right; }
 
 /* post */
 article header + p { margin-top:-1.5em }
@@ -196,11 +196,22 @@ section.i365 { margin-bottom:-2em }
 
 
 @media only screen and (max-device-width:480px) {
-  article header time { top:9px; }
-  footer li { padding-left:100px }
+  body { font-size:14px; }
+  body > article, body > section { margin-top:20px; }
+  body > article > h1, body > section > h1, body > article > header h1 { margin-bottom:35px }
+  .insite, .contact { font-size: 18px }
+  .insite li { padding-right: 26px }
+  .contact { top:-27px; }
   .contact img { height:14px }
+
+  article header time { top:12px }
+  article header time, .archive time { font-size:20px }
+  .archive time { padding-top:4px }
+  footer li { padding-left:127px }
 
   .tags small { font-size:8px }
   .tags { font-size:9px }
   .tags strong { font-size:10px }
+
+  .echoes .icon { top:46px;}
 }
