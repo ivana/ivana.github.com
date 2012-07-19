@@ -20,15 +20,14 @@ h1, nav, .archive a, .annotated a, .tags, .photography, footer {
 
 p { margin-bottom:1.5em; }
 
-em { font-style:normal; text-shadow:0 0 1px #333 }
-img { border:0 none }
-.bordered { border:1px solid #ddd }
-
-aside, .more { padding-top:1.5em; border-top:1px dashed #ddd }
-aside { margin-top:5em }
+aside { margin-top:5em; padding-top:1.5em; border-top:1px dashed #ddd }
 footer { margin:8em 0 1em; padding-top:2em; }
 footer li { display:inline; padding-left:168px }
 footer li:first-child { padding-left:0 }
+
+em { font-style:normal; text-shadow:0 0 1px #333 }
+img { border:0 none }
+.bordered { border:1px solid #ddd }
 
 /* headings */
 h1 {
@@ -98,7 +97,7 @@ li { line-height:1.5 }
 .vcard li a img {
   width:24px;
   float:left;
-  margin:1px 12px 0 8px;
+  margin:1px 10px 0 8px;
 }
 .vcard li a span {
   padding: 5px;
@@ -113,8 +112,6 @@ li { line-height:1.5 }
   padding:3px 5px 2px;
   border-color:#eee;
 }
-.tags + p { margin:2em 0 }
-.more { margin-top:1.5em }
 
 /* projects */
 .projects p { margin-bottom:1em; }
@@ -189,7 +186,6 @@ blockquote p:last-child { padding-bottom:18px }
 /* abstractions */
 .insite, .contact, .vcard li a, .tags small, .photography ol, footer { font-size:12px }
 pre code, .annotated ol a, .tags { font-size:14px }
-/*time, small, .echoes li, .tags strong, aside, .more { font-size:15px }*/
 
 .flickr li img, .photography article img { width:518px }
 h1, a, .tags li { text-shadow: 1px 1px 1px #e4e4e4; }
