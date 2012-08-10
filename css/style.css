@@ -14,7 +14,7 @@ body {
 }
 body > article, body > section { margin-top:40px }
 
-h1, nav, .archive a, .annotated a, .tags, .photography, footer {
+h1, nav, .archive a, .annotated a, .tags, footer {
   font-family: geneva, tahoma, helvetica, arial, sans-serif;
 }
 
@@ -171,13 +171,13 @@ blockquote p:last-child { padding-bottom:18px }
 .twitter q:after { content:'' } /* Webkit */
 
 /* photography */
-.photography {}
-.photography > h1 { float:left; margin-bottom:54px; }
+.photography > h1 { float:left }
 .photography ol { padding-top:8px; text-align: right; }
 .photography ol img { width: 20px; }
 .photography li { display:inline; margin-left:6px }
+.photography p { clear:both; }
 
-.photography article { margin-bottom:50px; }
+.photography article { margin-top:50px; }
 .photography article h1 {
   font-size: 18px; font-variant: small-caps; text-transform: lowercase; letter-spacing: 2px; text-align:right;
   color: #444;
