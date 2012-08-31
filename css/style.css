@@ -8,11 +8,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   font:16px/1.5 "Theano Didot", "times new roman", times, georgia, serif;
-  margin:0 auto; width:518px; padding:0 0 10px 40px; border-left:1px dashed #ddd;
+  margin:0 auto; width:518px; padding:0 0 40px 40px; border-left:1px dashed #ddd;
   background:snow; color:#444;
   /*background: url('http://www.baselineme.com/24') center top repeat;*/
 }
-body > article, body > section { margin-top:40px }
+body > article, body > section { margin-top:58px }
 
 h1, nav, .archive a, .annotated a, .tags, footer {
   font-family: geneva, tahoma, helvetica, arial, sans-serif;
@@ -22,7 +22,7 @@ p { margin-bottom:1.5em; }
 
 aside { margin-top:4em; padding-top:1.5em; border-top:1px dashed #ddd }
 footer { margin:8em 0 1em; padding-top:2em; }
-footer li { display:inline; padding-left:168px }
+footer li { float:left; padding-left:185px }
 footer li:first-child { padding-left:0 }
 
 em { font-style:normal; text-shadow:0 0 1px #333 }
@@ -58,15 +58,11 @@ h1 a:hover, h2 a:hover, .archive a:hover, nav a:hover, footer a:hover { text-dec
 header a:focus, header a:active, header a:visited { outline:0 none }
 
 /* nav */
-.insite img, .contact img { height:12px; padding-left: 3px; position:relative; top:1px }
-.insite { padding-top: 10px; }
-.insite li { display: inline-block; padding-right:47px; }
-.insite li:last-child { padding-right:0; }
+.top img, footer nav img { height:12px; padding-left: 3px; position:relative; top:1px }
+.top { padding-top: 10px; }
+.top li { display: inline-block; padding-right:42px; }
+.top li:last-child { padding-right:0; }
 .current span { padding-bottom: 5px; border-bottom: 1px solid #ddd; }
-.contact {
-  text-align: right;
-  position: relative; right: 570px; top:-18px;
-}
 
 /* lists */
 ul, ol { list-style:none inside; padding:0 }
@@ -186,7 +182,7 @@ blockquote p:last-child { padding-bottom:18px }
 }
 
 /* abstractions */
-.insite, .contact, .vcard li a, .tags small, .photography ol, footer { font-size:12px }
+.top, .vcard li a, .tags small, .photography ol, footer { font-size:12px }
 pre code, .annotated ol a, .tags { font-size:14px }
 h1, a, .tags li { text-shadow: 1px 1px 1px #e4e4e4; }
 
@@ -199,15 +195,13 @@ section.i365 { margin-bottom:-2em }
   body { font-size:14px; }
   body > article, body > section { margin-top:20px; }
   body > article > h1, body > section > h1, body > article > header h1 { margin-bottom:35px }
-  .insite, .contact { font-size: 18px }
-  .insite li { padding-right: 26px }
-  .contact { top:-27px; }
-  .contact img { height:14px }
+  .top, footer { font-size: 18px }
+  .top li { padding-right:20px }
 
   article header time { top:12px }
   article header time, .archive time { font-size:20px }
   .archive time { padding-top:4px }
-  footer li { padding-left:127px }
+  footer li { padding-left:158px }
 
   .tags small { font-size:8px }
   .tags { font-size:9px }
