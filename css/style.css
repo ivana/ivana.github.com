@@ -171,9 +171,7 @@ blockquote p:last-child { padding-bottom:18px }
 
 /* photography */
 .photography > h1 { float:left }
-.photography ol { padding-top:8px; text-align: right; }
-.photography ol img { width: 20px; }
-.photography li { display:inline; margin-left:6px }
+.photography ol { list-style-type: square; }
 .photography p { clear:both; }
 
 .photography article { margin-top:50px; }
@@ -183,8 +181,8 @@ blockquote p:last-child { padding-bottom:18px }
 }
 
 /* abstractions */
-.top, .vcard li a, .tags small, .photography ol, footer { font-size:12px }
-pre code, .annotated ol a, .tags, .gist { font-size:14px }
+.top, .vcard li a, .tags small, footer { font-size:12px }
+pre code, .annotated ol a, .tags { font-size:14px }
 h1, a, .tags li { text-shadow: 1px 1px 1px #e4e4e4; }
 
 /* post specific */
