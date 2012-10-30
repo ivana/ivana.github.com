@@ -136,7 +136,8 @@ pre code, blockquote { background:#eee; border-radius:0 9px 9px 0; }
 pre code {
   display:block;
   line-height:18px; white-space:pre-wrap;
-  margin:-1.5em 0 -1.5em -40px; padding:0 1em 0 40px;
+  margin: -0.5em 1em 1.5em -40px;
+  padding: 1em 1em 1em 40px;
 }
 blockquote { padding:0 9px 0 40px; margin:0 0 18px -40px }
 blockquote p:first-child:before { content:'“'; font-size:36px }
@@ -183,7 +184,7 @@ blockquote p:last-child { padding-bottom:18px }
 
 /* abstractions */
 .top, .vcard li a, .tags small, .photography ol, footer { font-size:12px }
-pre code, .annotated ol a, .tags { font-size:14px }
+pre code, .annotated ol a, .tags, .gist { font-size:14px }
 h1, a, .tags li { text-shadow: 1px 1px 1px #e4e4e4; }
 
 /* post specific */
