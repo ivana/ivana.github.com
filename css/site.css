@@ -1,0 +1,140 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline; }
+
+/* layout */
+body {
+  font: 400 16px/1.5 avenir, verdana, arial, helvetica, sans-serif;
+  color: #555558;
+  background-color: #ff9263;
+  background-image: -webkit-linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
+  background-image: -moz-linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
+  background-image: -ms-linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
+  background-image: -o-linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
+  background-image: linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
+  -webkit-background-size: 3px 3px;
+  -moz-background-size: 3px 3px;
+  -ms-background-size: 3px 3px;
+  -o-background-size: 3px 3px;
+  background-size: 3px 3px; }
+
+.centered {
+  width: 760px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 30px 70px 8rem;
+  background-color: #fefefe;
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: #ffaf8d; }
+
+aside {
+  margin-top: 5.5rem; }
+
+/* general */
+p {
+  margin: 1.5rem 0; }
+
+img {
+  display: block;
+  margin: 1rem 0; }
+
+strong, a, h2 {
+  font-weight: 500; }
+
+nav a, .contact a {
+  font-weight: 400; }
+
+/* links */
+a {
+  text-decoration: none;
+  color: #e92b61; }
+  a:hover, a:active {
+    border-bottom: 3px solid #883584; }
+
+/* lists */
+ul {
+  list-style: inside disc; }
+
+ol {
+  list-style: inside decimal; }
+
+.inline, .archive ol, .echoes ol {
+  list-style-type: none; }
+
+.inline li {
+  float: left; }
+
+.archive li {
+  margin-bottom: 1.5rem; }
+
+/* headings */
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 4.25rem;
+  line-height: 1.2; }
+  body > h1 {
+    line-height: 0;
+    margin: 0 0 0 -20000px; }
+
+h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 3rem 0 1.5rem; }
+
+/* nav */
+.site-nav {
+  margin-bottom: 6.25rem; }
+  .site-nav li {
+    padding-right: 20px; }
+  .home .site-nav .home, .projects .site-nav .projects, .blog .site-nav .blog, .archive .site-nav .archive {
+    border-bottom: 3px solid #ffaf8d; }
+
+.contact, .blog-nav {
+  display: block;
+  float: right;
+  margin: 0; }
+
+.blog-nav li {
+  padding-left: 20px; }
+
+/* blog */
+.post h1 a:hover {
+  border-bottom: 0 none; }
+
+.published {
+  color: #bbb;
+  font-style: italic; }
+  .published time {
+    color: #555558; }
+  .published time, .published a {
+    padding: 0 1px; }
+
+.gist {
+  font-size: 15px; }
+
+.archive time {
+  float: right; }
+
+/* iPhone */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 24px; }
+
+  .centered {
+    width: 600px;
+    padding: 20px; }
+
+  .site-nav {
+    margin-bottom: 5rem; }
+
+  h1 {
+    margin-bottom: 2.5rem; }
+
+  h2 {
+    margin-top: 2.5rem; } }

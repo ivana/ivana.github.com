@@ -3,53 +3,46 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta name="author" lang="hr" content="Ivana Vasilj, dev@ivana.im">
-    <meta name="viewport" content="initial-scale=0.36">
+    <title>Ivana Vasilj | {{ page.title }}</title>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/site.css">
     <link rel="icon" type="image/png" href="/img/favicon.ico">
     <link href="http://feeds.feedburner.com/ivanavasilj" type="application/atom+xml" rel="alternate" title="Ivana Vasilj | Blog">
 
-    <title>{{ page.title }} | Ivana Vasilj</title>
-    <meta name="description" content="Ivana Vasilj -
-    {% if page.desc %}{{ page.desc }}{% else %}{{ page.title }}{% endif %}">
+    <meta name="viewport" content="width=device-width">
 
+    <meta name="author" lang="hr" content="Ivana Vasilj, dev@ivana.im">
+    <meta name="description" content="Ivana Vasilj - {% if page.desc %}{{ page.desc }}{% else %}{{ page.title }}{% endif %}">
     <meta name="google-site-verification" content="HSE8oq5B95IDw_GW0h5wCy8Czl_AJIWa0VHznHX46Z8">
-
-    <!--[if lt IE 9]>
-    <script type="text/javascript">
-    (function(){var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');for(var i=0;i<e.length;i++){document.createElement(e[i])}})()
-    </script>
-    <![endif]-->
-
   </head>
 
-  <body>
-    <h1>ivana.im</h1>
+  <body class="{{ page.class }}">
+    <h1>Ivana Vasilj</h1>
 
-    <nav class="top">
-      <ol>
-        <li><a href="/">home</a></li>
-        <li><a href="/projects">projects</a></li>
-        <li><a href="/blog">blog</a></li>
-        <li><a href="/echoes">echoes</a></li>
-        <li><a href="/photography">photography</a></li>
-        <li><a href="mailto:dev@ivana.im">contact <img src="/img/icons/mail.gif" alt=""></a></li>
-      </ol>
-    </nav>
+    <div class=centered>
 
-    {{ content }}
+      {% if page.class == 'blog' %}
+        <nav class=blog-nav>
+          <ol class=inline>
+            <li><a href="/archive">archive</a></li>
+            <li><a href="http://feeds.feedburner.com/ivanavasilj">feed</a></li>
+          </ol>
+        </nav>
+      {% else %}
+        <address class=contact><a href="mailto:dev@ivana.im">contact me for work</a></address>
+      {% endif %}
 
-    <footer>
-      <nav>
-        <ol>
-          <li><a href="/">home</a></li>
-          <li><a href="/archive">blog archive</a></li>
-          <li><a href="http://feeds.feedburner.com/ivanavasilj">feed <img src="/img/icons/feed.gif" alt=""></a></li>
+      <nav class=site-nav>
+        <ol class=inline>
+          <li><a class=home href="/">ivana.im</a></li>
+          <li><a class=projects href="/projects">projects</a></li>
+          <li><a class=blog href="/blog">blog</a></li>
         </ol>
       </nav>
-    </footer>
 
+      {{ content }}
+
+    </div>
 
     <script type="text/javascript">
       var _gaq = _gaq || [];
@@ -63,8 +56,14 @@
       })();
     </script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="/js/site.js"></script>
+    <script src="/js/zepto.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        if ($('body').height() < $(window).height()){
+          $('body').height($(window).height())
+        }
+      })
+    </script>
 
   </body>
 </html>

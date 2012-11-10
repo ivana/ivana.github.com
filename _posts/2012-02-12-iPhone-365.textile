@@ -12,7 +12,7 @@ I decided to make it an iPhone 365 project for 3 simple reasons:
 # There are so many great iPhone apps for taking and editing your photos. I will list the ones I used.
 
 <section class="i365">
-h1. My favourite photo apps
+h2. My favourite photo apps
 
 # Built-in camera app. With its irreplaceable HDR setting, it's still my most preferred app for shooting. I used all the other apps only for editing (apart from Hipstamatic).
 <a href="http://www.flickr.com/photos/ivanavasilj/6537189465/in/set-72157626061095120/"><img src="http://farm8.staticflickr.com/7002/6537189465_ff1bce500a_d.jpg" alt="311/365: Splendid"></a>
@@ -27,7 +27,7 @@ h1. My favourite photo apps
 </section>
 
 <section>
-h1. The experience
+h2. The experience
 
 The greatest benefit I got from doing this is the community feedback from my Flickr friends, great number of them coming from "The Daily Shoot":dailyshoot project, which unfortunately is no longer active, but it had great daily assignments that kept me motivated, and connected with people who are doing the same thing.
 

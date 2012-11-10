@@ -6,9 +6,6 @@ $(function(){
   var navAnchor = $('.top a[href="/' + currentPage + '"]')
   navAnchor.closest('li').addClass('current').html('<span>' + navAnchor.text() + '</span>')
 
-  // min height determined by screen, not content
-  $('body').css('min-height', screen.availHeight)
-
   // echoes
   if(currentPage == 'echoes'){
     $.getJSON('http://pipes.yahoo.com/ivasilj/echoes?_render=json&_callback=?', function(data){
@@ -20,8 +17,8 @@ $(function(){
             var anchor = '<a href="' + item.link + '">' + item.title + '</a>'
             var time = '<time>' + DateUtil.myDateFormat(new Date(item.pubDate)) + '</time>'
 
-            if(item.description) $('#pinboard ol').append('<li>' + anchor + '<q>' + item.description + '</q>' + time + '</li>')
-            else $('#pinboard ol').append('<li>' + anchor + time + '</li>')
+            if(item.description) $('#pinboard').append('<li>' + anchor + '<q>' + item.description + '</q>' + time + '</li>')
+            else $('#pinboard').append('<li>' + anchor + time + '</li>')
             break
 
           case 'twitter':
@@ -29,7 +26,7 @@ $(function(){
             var time = '<time>' + DateUtil.myDateFormat(new Date(item.pubDate)) + ' ' + DateUtil.getHoursAndMinutes(new Date(item.pubDate)) +  '</time>'
             var anchor = '<a href="' + item.link + '"><q cite="' + item.link + '">' + item.title + '</q></a>'
 
-            $('#twitter ol').append('<li>' + anchor + time + '</li>')
+            $('#twitter').append('<li>' + anchor + time + '</li>')
             break
 
           case 'flickr':
@@ -39,7 +36,7 @@ $(function(){
             var imgsrc = item.content.content.match(/http:\/\/farm.+.jpg/)[0].replace('_m.jpg', '_z_d.jpg')
             var anchor = '<a href="' + item.link + '"><img class="bordered fit" src="' + imgsrc + '" alt="' + item.title + '"></a>'
 
-            $('#flickr ol').append('<li>' + anchor + '</li>')
+            $('#flickr').append('<li>' + anchor + '</li>')
             break
         }
       })
