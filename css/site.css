@@ -121,7 +121,12 @@ h2 {
 .archive time {
   float: right; }
 
-/* iPhone */
+/* between smartphone and default width */
+@media only screen and (max-width: 760px) {
+  .centered {
+    padding: 30px 9.21053% 8rem;
+    width: 100%; } }
+/* smartphone */
 @media only screen and (max-width: 480px) {
   body {
     font-size: 24px; }
