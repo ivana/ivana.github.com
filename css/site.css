@@ -43,7 +43,7 @@ img {
   display: block;
   margin: 1rem 0; }
 
-strong, a, h2 {
+strong, a, h1, h2 {
   font-weight: 500; }
 
 nav a, .contact a {
@@ -79,8 +79,7 @@ ol {
 /* headings */
 h1 {
   font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 4.25rem;
+  margin-bottom: 2.75rem;
   line-height: 1.2; }
   body > h1 {
     line-height: 0;
@@ -93,7 +92,7 @@ h2 {
 
 /* nav */
 .site-nav {
-  margin-bottom: 6.25rem; }
+  margin-bottom: 4.75rem; }
   .site-nav li {
     padding-right: 20px; }
   .home .site-nav .home, .projects .site-nav .projects, .blog .site-nav .blog, .archive .site-nav .archive {
@@ -146,4 +145,7 @@ h2 {
     margin-bottom: 2.5rem; }
 
   h2 {
-    margin-top: 2.5rem; } }
+    margin-top: 2.5rem; }
+
+  br {
+    display: none; } }
