@@ -10,27 +10,20 @@
 body {
   font: 400 16px/1.5 avenir, verdana, arial, helvetica, sans-serif;
   color: #555558;
-  background-color: #ff9263;
-  background-image: -webkit-linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
-  background-image: -moz-linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
-  background-image: -ms-linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
-  background-image: -o-linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
-  background-image: linear-gradient(left, #ff9263 1px, #ffaf8d 2px);
-  -webkit-background-size: 3px 3px;
-  -moz-background-size: 3px 3px;
-  -ms-background-size: 3px 3px;
-  -o-background-size: 3px 3px;
+  background-color: #FF9263;
+  background-image: -webkit-linear-gradient(left, #FF9263 1px, #FFAF8D 2px);
+  background-image: linear-gradient(to right, #FF9263 1px, #FFAF8D 2px);
   background-size: 3px 3px; }
 
 .centered {
   width: 760px;
   min-height: 100%;
   margin: 0 auto;
-  padding: 30px 70px 8rem;
+  padding: 30px 70px;
   background-color: #fefefe;
   border-width: 0 1px;
   border-style: solid;
-  border-color: #ffaf8d; }
+  border-color: #FFAF8D; }
 
 aside {
   margin-top: 5.5rem; }
@@ -50,7 +43,7 @@ nav a, .contact a {
   font-weight: 400; }
 
 blockquote {
-  border-left: 3px solid #ff9263;
+  border-left: 3px solid #FF9263;
   padding-left: 20px; }
 
 /* links */
@@ -96,7 +89,7 @@ h2 {
   .site-nav li {
     padding-right: 20px; }
   .home .site-nav .home, .projects .site-nav .projects, .blog .site-nav .blog, .archive .site-nav .archive {
-    border-bottom: 3px solid #ffaf8d; }
+    border-bottom: 3px solid #FFAF8D; }
 
 .contact, .blog-nav {
   display: block;
