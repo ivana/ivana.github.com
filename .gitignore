@@ -1,3 +1,6 @@
 .idea
 _site
 img/*grid*.png
+.jekyll-cache/
+Gemfile
+Gemfile.lock
